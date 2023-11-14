@@ -1,0 +1,3018 @@
+[
+  {
+    "requirements": {
+      "faith": 18,
+      "strength": 22,
+      "intelligence": 18,
+      "dexterity": 18
+    },
+    "category": "c1cb376964cee52c66a99510",
+    "weight": 9,
+    "damage": {
+      "physical": 160,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 300,
+    "name": "Abyss Greatsword",
+    "attackType": "regular",
+    "bonus": {
+      "faith": null,
+      "strength": "C",
+      "intelligence": null,
+      "dexterity": "C"
+    },
+    "id": "418d1c93-5e9a-430b-ac33-58bfe541e99d"
+  },
+  {
+    "requirements": {
+      "faith": 14,
+      "strength": 10,
+      "intelligence": 0,
+      "dexterity": 10
+    },
+    "category": "c0cb37db64cab52c01f91317",
+    "weight": 3,
+    "damage": {
+      "physical": 80,
+      "magic": 80,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 300,
+    "name": "Astora's Straight Sword",
+    "attackType": "regular/thrust",
+    "bonus": {
+      "faith": "C",
+      "strength": "C",
+      "intelligence": null,
+      "dexterity": "C"
+    },
+    "id": "9ec40cc7-7e30-4fda-a08f-7a2fed54d0f2"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 16,
+      "intelligence": 0,
+      "dexterity": 14
+    },
+    "category": "c1cb37db64cee52c66f99510",
+    "weight": 6,
+    "damage": {
+      "physical": 37,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 150,
+    "name": "Avelyn",
+    "attackType": "none",
+    "bonus": {
+      "faith": null,
+      "strength": null,
+      "intelligence": null,
+      "dexterity": null
+    },
+    "id": "0bec4379-e288-45d5-b5b7-636e394de638"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 10,
+      "intelligence": 0,
+      "dexterity": 14
+    },
+    "category": "c0cb37db64cab52c01f91317",
+    "weight": 3,
+    "damage": {
+      "physical": 80,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 120,
+    "name": "Balder Side Sword",
+    "attackType": "regular/thrust",
+    "bonus": {
+      "faith": null,
+      "strength": "E",
+      "intelligence": null,
+      "dexterity": "B"
+    },
+    "id": "521d93b1-7ecc-4e88-b1dd-613956f33e90"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 5,
+      "intelligence": 0,
+      "dexterity": 14
+    },
+    "category": "f1cb37db64cee52c66f99510",
+    "weight": 0.5,
+    "damage": {
+      "physical": 56,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 200,
+    "name": "Bandit's Knife",
+    "attackType": "slash",
+    "bonus": {
+      "faith": null,
+      "strength": "E",
+      "intelligence": null,
+      "dexterity": "B"
+    },
+    "id": "1c517164-61dd-4575-80ca-99a89e7791d3"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 10,
+      "intelligence": 0,
+      "dexterity": 10
+    },
+    "category": "c0cb37db64cab52c01f91317",
+    "weight": 3,
+    "damage": {
+      "physical": 80,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 160,
+    "name": "Barbed Straight Sword",
+    "attackType": "regular/thrust",
+    "bonus": {
+      "faith": null,
+      "strength": "D",
+      "intelligence": null,
+      "dexterity": "C"
+    },
+    "id": "2da2340f-4ee3-4ce2-8ad3-c28c71913512"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 16,
+      "intelligence": 0,
+      "dexterity": 10
+    },
+    "category": "c1cb376964cee52c66a99510",
+    "weight": 6,
+    "damage": {
+      "physical": 105,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 200,
+    "name": "Bastard Sword",
+    "attackType": "regular",
+    "bonus": {
+      "faith": null,
+      "strength": "C",
+      "intelligence": null,
+      "dexterity": "C"
+    },
+    "id": "4cd9d374-f8ff-476e-a8d6-d289551c0391"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 12,
+      "intelligence": 0,
+      "dexterity": 8
+    },
+    "category": "a1cb37db64cee52c66f99510",
+    "weight": 4,
+    "damage": {
+      "physical": 95,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 250,
+    "name": "Battle Axe",
+    "attackType": "regular",
+    "bonus": {
+      "faith": null,
+      "strength": "C",
+      "intelligence": null,
+      "dexterity": "D"
+    },
+    "id": "9c95ece9-cf7e-4216-9325-fd9b581020da"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 9,
+      "intelligence": 0,
+      "dexterity": 18
+    },
+    "category": "b1cb37db64cee52c66f99510",
+    "weight": 1,
+    "damage": {
+      "physical": 34,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 100,
+    "name": "Black Bow of Pharis",
+    "attackType": "none",
+    "bonus": {
+      "faith": null,
+      "strength": "E",
+      "intelligence": null,
+      "dexterity": "S"
+    },
+    "id": "cf60c22b-f9e1-4f84-b8a3-109067c0fee3"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 36,
+      "intelligence": 0,
+      "dexterity": 18
+    },
+    "category": "c7cb37db64aee52c66f99510",
+    "weight": 16,
+    "damage": {
+      "physical": 229,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 300,
+    "name": "Black Knight Greataxe",
+    "attackType": "regular",
+    "bonus": {
+      "faith": null,
+      "strength": "B",
+      "intelligence": null,
+      "dexterity": "E"
+    },
+    "id": "92f1a959-132c-4104-b3a8-bf7e4b4d45e0"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 32,
+      "intelligence": 0,
+      "dexterity": 18
+    },
+    "category": "c1cb27db63cee99c33f99510",
+    "weight": 14,
+    "damage": {
+      "physical": 220,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 300,
+    "name": "Black Knight Greatsword",
+    "attackType": "regular/thrust",
+    "bonus": {
+      "faith": null,
+      "strength": "B",
+      "intelligence": null,
+      "dexterity": "E"
+    },
+    "id": "aec50587-13bb-4967-9613-9e970dec6f5c"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 32,
+      "intelligence": 0,
+      "dexterity": 18
+    },
+    "category": "c1cb37db64cee12c66f93510",
+    "weight": 14,
+    "damage": {
+      "physical": 245,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 300,
+    "name": "Black Knight Halberd",
+    "attackType": "slash",
+    "bonus": {
+      "faith": null,
+      "strength": "D",
+      "intelligence": null,
+      "dexterity": "E"
+    },
+    "id": "13229081-e820-4d75-8ad3-b7a339467859"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 20,
+      "intelligence": 0,
+      "dexterity": 18
+    },
+    "category": "c1cb376964cee52c66a99510",
+    "weight": 8,
+    "damage": {
+      "physical": 220,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 300,
+    "name": "Black Knight Sword",
+    "attackType": "regular/thrust",
+    "bonus": {
+      "faith": null,
+      "strength": "C",
+      "intelligence": null,
+      "dexterity": "E"
+    },
+    "id": "e41c1a41-694e-4a3c-b9d6-860f8616ba18"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 16,
+      "intelligence": 0,
+      "dexterity": 0
+    },
+    "category": "c1cb37db64cee1a166f93510",
+    "weight": 6,
+    "damage": {
+      "physical": 120,
+      "magic": 0,
+      "lightning": 200,
+      "fire": 0
+    },
+    "durability": 250,
+    "name": "Blacksmith Giant Hammer",
+    "attackType": "strike",
+    "bonus": {
+      "faith": null,
+      "strength": "D",
+      "intelligence": null,
+      "dexterity": null
+    },
+    "id": "fa75b387-3ab0-415d-8ff5-f3c7804f1d9d"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 14,
+      "intelligence": 0,
+      "dexterity": 0
+    },
+    "category": "c1cb37db64cee1a166f93510",
+    "weight": 5,
+    "damage": {
+      "physical": 87,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 250,
+    "name": "Blacksmith Hammer",
+    "attackType": "strike",
+    "bonus": {
+      "faith": null,
+      "strength": "C",
+      "intelligence": null,
+      "dexterity": null
+    },
+    "id": "5feba7dc-deb5-422e-b6b9-a761963faf6f"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 10,
+      "intelligence": 0,
+      "dexterity": 10
+    },
+    "category": "c0cb37db64cab52c01f91317",
+    "weight": 3,
+    "damage": {
+      "physical": 82,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 200,
+    "name": "Broadsword",
+    "attackType": "regular",
+    "bonus": {
+      "faith": null,
+      "strength": "C",
+      "intelligence": null,
+      "dexterity": "C"
+    },
+    "id": "dc1ff46c-9814-441c-9ac1-350d39c01764"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 8,
+      "intelligence": 0,
+      "dexterity": 8
+    },
+    "category": "c0cb37db64cab52c01f91317",
+    "weight": 2,
+    "damage": {
+      "physical": 40,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 200,
+    "name": "Broken Straight Sword",
+    "attackType": "regular/thrust",
+    "bonus": {
+      "faith": null,
+      "strength": "D",
+      "intelligence": null,
+      "dexterity": "D"
+    },
+    "id": "b995f747-a943-47c4-8190-5ced8711242e"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 24,
+      "intelligence": 0,
+      "dexterity": 0
+    },
+    "category": "a1cb37db64cee52c66f99510",
+    "weight": 10,
+    "damage": {
+      "physical": 90,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 250,
+    "name": "Butcher Knife",
+    "attackType": "regular",
+    "bonus": {
+      "faith": null,
+      "strength": "B",
+      "intelligence": null,
+      "dexterity": null
+    },
+    "id": "1cd9d4d6-2e27-4c07-997a-f94984ab8a0f"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 5,
+      "intelligence": 0,
+      "dexterity": 8
+    },
+    "category": "c2cb37db64ceb52c66f99515",
+    "weight": 0.5,
+    "damage": {
+      "physical": 66,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 300,
+    "name": "Caestus",
+    "attackType": "strike",
+    "bonus": {
+      "faith": null,
+      "strength": "C",
+      "intelligence": null,
+      "dexterity": "C"
+    },
+    "id": "2fb8cdd1-2431-4f37-a1ea-83a2d22b8a34"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 16,
+      "intelligence": 24,
+      "dexterity": 16
+    },
+    "category": "c0cb37db64cee52c01f91510",
+    "weight": 6,
+    "damage": {
+      "physical": 70,
+      "magic": 115,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 240,
+    "name": "Channeler's Trident",
+    "attackType": "thrust",
+    "bonus": {
+      "faith": null,
+      "strength": "E",
+      "intelligence": "B",
+      "dexterity": "C"
+    },
+    "id": "fe03e6ec-a222-4051-9af4-60c0dfcf439c"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 16,
+      "intelligence": 0,
+      "dexterity": 14
+    },
+    "category": "c1cb37db64cea12c66f99910",
+    "weight": 6,
+    "damage": {
+      "physical": 144,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 120,
+    "name": "Chaos Blade",
+    "attackType": "slash",
+    "bonus": {
+      "faith": null,
+      "strength": null,
+      "intelligence": null,
+      "dexterity": "B"
+    },
+    "id": "93674649-211b-4955-82f7-99054457e447"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 6,
+      "intelligence": 0,
+      "dexterity": 14
+    },
+    "category": "c2cb37db64ceb52c66f99515",
+    "weight": 1,
+    "damage": {
+      "physical": 72,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 150,
+    "name": "Claw",
+    "attackType": "slash",
+    "bonus": {
+      "faith": null,
+      "strength": "E",
+      "intelligence": null,
+      "dexterity": "B"
+    },
+    "id": "ab7eeaff-5ef1-41bb-840c-9ccb01e8b049"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 16,
+      "intelligence": 0,
+      "dexterity": 10
+    },
+    "category": "c1cb376964cee52c66a99510",
+    "weight": 6,
+    "damage": {
+      "physical": 103,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 200,
+    "name": "Claymore",
+    "attackType": "regular/thrust",
+    "bonus": {
+      "faith": null,
+      "strength": "C",
+      "intelligence": null,
+      "dexterity": "C"
+    },
+    "id": "496e20cc-ea6c-4d74-a390-aa085a692326"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 10,
+      "intelligence": 0,
+      "dexterity": 0
+    },
+    "category": "c1cb37db64cee1a166f93510",
+    "weight": 3,
+    "damage": {
+      "physical": 87,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 250,
+    "name": "Club",
+    "attackType": "strike",
+    "bonus": {
+      "faith": null,
+      "strength": "A",
+      "intelligence": null,
+      "dexterity": null
+    },
+    "id": "c66ab9ac-ad17-40f2-9af1-f71a0ff32adc"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 11,
+      "intelligence": 0,
+      "dexterity": 12
+    },
+    "category": "b1cb37db64cee52c66f99510",
+    "weight": 1,
+    "damage": {
+      "physical": 55,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 100,
+    "name": "Composite Bow",
+    "attackType": "none",
+    "bonus": {
+      "faith": null,
+      "strength": "C",
+      "intelligence": null,
+      "dexterity": "C"
+    },
+    "id": "a487ba2d-770b-457c-a349-8a31fdd2a9d2"
+  },
+  {
+    "requirements": {
+      "faith": 16,
+      "strength": 18,
+      "intelligence": 0,
+      "dexterity": 12
+    },
+    "category": "a1cb37db64cee52c66f99510",
+    "weight": 7,
+    "damage": {
+      "physical": 115,
+      "magic": 115,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 180,
+    "name": "Crescent Axe",
+    "attackType": "regular",
+    "bonus": {
+      "faith": "B",
+      "strength": "D",
+      "intelligence": null,
+      "dexterity": "D"
+    },
+    "id": "6514c6d4-7ae7-4791-9108-b244b65b8607"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 5,
+      "intelligence": 0,
+      "dexterity": 8
+    },
+    "category": "f1cb37db64cee52c66f99510",
+    "weight": 0.5,
+    "damage": {
+      "physical": 56,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 200,
+    "name": "Dagger",
+    "attackType": "thrust/slash",
+    "bonus": {
+      "faith": null,
+      "strength": "E",
+      "intelligence": null,
+      "dexterity": "B"
+    },
+    "id": "95c65ecb-bd2f-4f11-90ae-c1e2256d2615"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 6,
+      "intelligence": 0,
+      "dexterity": 25
+    },
+    "category": "f1cb37db64cee52c66f99510",
+    "weight": 1,
+    "damage": {
+      "physical": 75,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 120,
+    "name": "Dark Silver Tracer",
+    "attackType": "thrust/slash",
+    "bonus": {
+      "faith": null,
+      "strength": "E",
+      "intelligence": null,
+      "dexterity": "S"
+    },
+    "id": "c04d2f3e-2ffa-4a27-88ae-9131fcc4ecf1"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 16,
+      "intelligence": 0,
+      "dexterity": 16
+    },
+    "category": "c0cb37db64cab52c01f91317",
+    "weight": 6,
+    "damage": {
+      "physical": 82,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 200,
+    "name": "Darksword",
+    "attackType": "regular",
+    "bonus": {
+      "faith": null,
+      "strength": "C",
+      "intelligence": null,
+      "dexterity": "C"
+    },
+    "id": "f3c575ea-8f88-4379-b13b-9fc0f919efcf"
+  },
+  {
+    "requirements": {
+      "faith": 16,
+      "strength": 7,
+      "intelligence": 0,
+      "dexterity": 16
+    },
+    "category": "b1cb37db64cee52c66f99510",
+    "weight": 1,
+    "damage": {
+      "physical": 85,
+      "magic": 85,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 400,
+    "name": "Darkmoon Bow",
+    "attackType": "none",
+    "bonus": {
+      "faith": "D",
+      "strength": "E",
+      "intelligence": null,
+      "dexterity": "D"
+    },
+    "id": "c76bf062-403d-40bd-b410-f2731587d88f"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 40,
+      "intelligence": 0,
+      "dexterity": 0
+    },
+    "category": "c1cb27db63cee99c33f99510",
+    "weight": 18,
+    "damage": {
+      "physical": 133,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 600,
+    "name": "Demon Great Machete",
+    "attackType": "regular",
+    "bonus": {
+      "faith": null,
+      "strength": "B",
+      "intelligence": null,
+      "dexterity": null
+    },
+    "id": "d64eecea-9756-4f2d-a235-61b994f78ddb"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 46,
+      "intelligence": 0,
+      "dexterity": 0
+    },
+    "category": "c1cb37db64cee52c66f99516",
+    "weight": 22,
+    "damage": {
+      "physical": 138,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 600,
+    "name": "Demon's Great Hammer",
+    "attackType": "strike",
+    "bonus": {
+      "faith": null,
+      "strength": "B",
+      "intelligence": null,
+      "dexterity": null
+    },
+    "id": "bc3ede70-7b50-45b7-a10b-2e3a0413e741"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 46,
+      "intelligence": 0,
+      "dexterity": 0
+    },
+    "category": "c7cb37db64aee52c66f99510",
+    "weight": 22,
+    "damage": {
+      "physical": 114,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 600,
+    "name": "Demon's Greataxe",
+    "attackType": "regular",
+    "bonus": {
+      "faith": null,
+      "strength": "A",
+      "intelligence": null,
+      "dexterity": null
+    },
+    "id": "28e0a641-910e-4f82-9bfd-f1db58671d30"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 12,
+      "intelligence": 0,
+      "dexterity": 10
+    },
+    "category": "c0cb37db64cee52c01f91510",
+    "weight": 4,
+    "damage": {
+      "physical": 100,
+      "magic": 0,
+      "lightning": 100,
+      "fire": 0
+    },
+    "durability": 400,
+    "name": "Demon's Spear",
+    "attackType": "thrust",
+    "bonus": {
+      "faith": null,
+      "strength": "C",
+      "intelligence": null,
+      "dexterity": "C"
+    },
+    "id": "282bd95f-eb6a-46ad-a1d9-3ff9080ff5b2"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 20,
+      "intelligence": 0,
+      "dexterity": 0
+    },
+    "category": "c2cb37db64ceb52c66f99515",
+    "weight": 8,
+    "damage": {
+      "physical": 95,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 999,
+    "name": "Dragon Bone Fist",
+    "attackType": "strike",
+    "bonus": {
+      "faith": null,
+      "strength": "A",
+      "intelligence": null,
+      "dexterity": null
+    },
+    "id": "1dbe9df5-9a27-44d5-9310-abe127be5cc5"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 50,
+      "intelligence": 0,
+      "dexterity": 10
+    },
+    "category": "c1cb27db63cee99c33f99510",
+    "weight": 24,
+    "damage": {
+      "physical": 390,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 400,
+    "name": "Dragon Greatsword",
+    "attackType": "regular",
+    "bonus": {
+      "faith": null,
+      "strength": null,
+      "intelligence": null,
+      "dexterity": null
+    },
+    "id": "7fc683e8-49dd-4f54-a762-c9924b206544"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 50,
+      "intelligence": 0,
+      "dexterity": 8
+    },
+    "category": "c7cb37db64aee52c66f99510",
+    "weight": 24,
+    "damage": {
+      "physical": 380,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 400,
+    "name": "Dragon King Greataxe",
+    "attackType": "regular",
+    "bonus": {
+      "faith": null,
+      "strength": null,
+      "intelligence": null,
+      "dexterity": null
+    },
+    "id": "ef1f6ca6-e853-4d4c-afbf-b27c3de4d9c0"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 24,
+      "intelligence": 0,
+      "dexterity": 24
+    },
+    "category": "c0cb37db64cee52c01f91510",
+    "weight": 10,
+    "damage": {
+      "physical": 95,
+      "magic": 0,
+      "lightning": 65,
+      "fire": 0
+    },
+    "durability": 300,
+    "name": "Dragonslayer Spear",
+    "attackType": "thrust",
+    "bonus": {
+      "faith": "B",
+      "strength": "C",
+      "intelligence": null,
+      "dexterity": "B"
+    },
+    "id": "9fc5adb5-98c6-40bb-a4ce-fc46b6358da7"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 40,
+      "intelligence": 0,
+      "dexterity": 0
+    },
+    "category": "c1cb37db64cee52c66f99516",
+    "weight": 18,
+    "damage": {
+      "physical": 290,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 999,
+    "name": "Dragon Tooth",
+    "attackType": "strike",
+    "bonus": {
+      "faith": null,
+      "strength": "D",
+      "intelligence": null,
+      "dexterity": null
+    },
+    "id": "5a1e8d81-a16b-4db1-ba00-9e7e5fc171a1"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 20,
+      "intelligence": 0,
+      "dexterity": 20
+    },
+    "category": "b1cb37db64cee52c66f99510",
+    "weight": 10,
+    "damage": {
+      "physical": 90,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 100,
+    "name": "Dragonslayer Greatbow",
+    "attackType": "none",
+    "bonus": {
+      "faith": null,
+      "strength": "C",
+      "intelligence": null,
+      "dexterity": "C"
+    },
+    "id": "6ac31b7a-94a4-4907-9d56-07c274d38aba"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 16,
+      "intelligence": 0,
+      "dexterity": 10
+    },
+    "category": "c0cb37db64cab52c01f91317",
+    "weight": 6,
+    "damage": {
+      "physical": 200,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 360,
+    "name": "Drake Sword",
+    "attackType": "regular",
+    "bonus": {
+      "faith": null,
+      "strength": null,
+      "intelligence": null,
+      "dexterity": null
+    },
+    "id": "dd00c161-3128-45be-ae67-21752ede100e"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 10,
+      "intelligence": 0,
+      "dexterity": 12
+    },
+    "category": "c1cb37db64cbe52c66f00114",
+    "weight": 3,
+    "damage": {
+      "physical": 75,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 150,
+    "name": "Estoc",
+    "attackType": "regular",
+    "bonus": {
+      "faith": null,
+      "strength": "D",
+      "intelligence": null,
+      "dexterity": "C"
+    },
+    "id": "5024b219-90e9-4b5b-a493-2445d25448eb"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 9,
+      "intelligence": 0,
+      "dexterity": 13
+    },
+    "category": "e1cb37db64cee52c66f99510",
+    "weight": 2.5,
+    "damage": {
+      "physical": 82,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 160,
+    "name": "Falchion",
+    "attackType": "slash",
+    "bonus": {
+      "faith": null,
+      "strength": "E",
+      "intelligence": null,
+      "dexterity": "B"
+    },
+    "id": "fda454fb-2acd-43d0-be05-2cc0465e405b"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 16,
+      "intelligence": 0,
+      "dexterity": 14
+    },
+    "category": "c1cb376964cee52c66a99510",
+    "weight": 6,
+    "damage": {
+      "physical": 160,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 160,
+    "name": "Flamberge",
+    "attackType": "slash",
+    "bonus": {
+      "faith": null,
+      "strength": "D",
+      "intelligence": null,
+      "dexterity": "C"
+    },
+    "id": "ae4deb79-4b89-469f-822b-8fc65f6b80db"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 15,
+      "intelligence": 0,
+      "dexterity": 12
+    },
+    "category": "c0cb37db64cee52c01f91510",
+    "weight": 5.5,
+    "damage": {
+      "physical": 75,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 300,
+    "name": "Four Pronged Plow",
+    "attackType": "thrust",
+    "bonus": {
+      "faith": null,
+      "strength": "D",
+      "intelligence": null,
+      "dexterity": "C"
+    },
+    "id": "b05c0ae4-09dc-4966-8f78-7ede2737c58b"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 14,
+      "intelligence": 0,
+      "dexterity": 14
+    },
+    "category": "a1cb37db64cee52c66f99510",
+    "weight": 5,
+    "damage": {
+      "physical": 93,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 150,
+    "name": "Gargoyle Tail Axe",
+    "attackType": "regular",
+    "bonus": {
+      "faith": null,
+      "strength": "D",
+      "intelligence": null,
+      "dexterity": "C"
+    },
+    "id": "3bb0ef43-d848-4756-98c6-0f829d76039f"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 16,
+      "intelligence": 0,
+      "dexterity": 12
+    },
+    "category": "c1cb37db64cee12c66f93510",
+    "weight": 6,
+    "damage": {
+      "physical": 115,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 200,
+    "name": "Gargoyle's Halberd",
+    "attackType": "regular",
+    "bonus": {
+      "faith": null,
+      "strength": "D",
+      "intelligence": null,
+      "dexterity": "D"
+    },
+    "id": "e3894dc9-fbdd-4509-8860-c175a7d97e27"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 5,
+      "intelligence": 0,
+      "dexterity": 8
+    },
+    "category": "f1cb37db64cee52c66f99510",
+    "weight": 0.5,
+    "damage": {
+      "physical": 110,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 100,
+    "name": "Ghost Blade",
+    "attackType": "thrust/slash",
+    "bonus": {
+      "faith": null,
+      "strength": "E",
+      "intelligence": null,
+      "dexterity": null
+    },
+    "id": "013ec596-791f-46ff-8cd7-f9fe760387f1"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 36,
+      "intelligence": 0,
+      "dexterity": 12
+    },
+    "category": "c1cb37db64cee12c66f93510",
+    "weight": 16,
+    "damage": {
+      "physical": 140,
+      "magic": 0,
+      "lightning": 135,
+      "fire": 0
+    },
+    "durability": 300,
+    "name": "Giant's Halberd",
+    "attackType": "regular/thrust",
+    "bonus": {
+      "faith": null,
+      "strength": "D",
+      "intelligence": null,
+      "dexterity": "D"
+    },
+    "id": "abe8d331-c46a-45e6-bd06-54ee7ffde70e"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 9,
+      "intelligence": 0,
+      "dexterity": 13
+    },
+    "category": "e1cb37db64cee52c66f99510",
+    "weight": 2,
+    "damage": {
+      "physical": 130,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 240,
+    "name": "Gold Tracer",
+    "attackType": "slash",
+    "bonus": {
+      "faith": null,
+      "strength": "E",
+      "intelligence": null,
+      "dexterity": "A"
+    },
+    "id": "18a67d0f-7680-4fc4-b576-936adf66767f"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 36,
+      "intelligence": 0,
+      "dexterity": 8
+    },
+    "category": "a1cb37db64cee52c66f99510",
+    "weight": 16,
+    "damage": {
+      "physical": 170,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 600,
+    "name": "Golem Axe",
+    "attackType": "regular",
+    "bonus": {
+      "faith": null,
+      "strength": "C",
+      "intelligence": null,
+      "dexterity": "E"
+    },
+    "id": "6c9dbc5d-af1d-45de-a48d-948ae12b4b1e"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 27,
+      "intelligence": 0,
+      "dexterity": 20
+    },
+    "category": "b1cb37db64cee52c66f99510",
+    "weight": 13,
+    "damage": {
+      "physical": 85,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 100,
+    "name": "Gough's Greatbow",
+    "attackType": "none",
+    "bonus": {
+      "faith": null,
+      "strength": "B",
+      "intelligence": null,
+      "dexterity": "C"
+    },
+    "id": "6298e2ff-be11-4a3f-a524-f4c5a08a27c1"
+  },
+  {
+    "requirements": {
+      "faith": 30,
+      "strength": 50,
+      "intelligence": 0,
+      "dexterity": 0
+    },
+    "category": "c1cb37db64cee52c66f99516",
+    "weight": 24,
+    "damage": {
+      "physical": 130,
+      "magic": 130,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 600,
+    "name": "Grant",
+    "attackType": "strike",
+    "bonus": {
+      "faith": "A",
+      "strength": "B",
+      "intelligence": null,
+      "dexterity": null
+    },
+    "id": "3e039b3a-98fe-4c44-9b93-f2fb4b8ec8e8"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 24,
+      "intelligence": 0,
+      "dexterity": 13
+    },
+    "category": "d1cb37db64cee52c66f99510",
+    "weight": 10,
+    "damage": {
+      "physical": 265,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 600,
+    "name": "Gravelord Sword",
+    "attackType": "thrust/slash",
+    "bonus": {
+      "faith": null,
+      "strength": "E",
+      "intelligence": null,
+      "dexterity": "E"
+    },
+    "id": "70d11e15-9d0e-43ca-a8ea-d90219249295"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 28,
+      "intelligence": 0,
+      "dexterity": 0
+    },
+    "category": "c1cb37db64cee52c66f99516",
+    "weight": 12,
+    "damage": {
+      "physical": 135,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 250,
+    "name": "Great Club",
+    "attackType": "strike",
+    "bonus": {
+      "faith": null,
+      "strength": "B",
+      "intelligence": null,
+      "dexterity": null
+    },
+    "id": "acc27aba-0953-4e44-8ab2-6f05e9472fab"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 20,
+      "intelligence": 0,
+      "dexterity": 10
+    },
+    "category": "c1cb376964cee52c66a99510",
+    "weight": 8,
+    "damage": {
+      "physical": 256,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 400,
+    "name": "Great Lord Greatsword",
+    "attackType": "regular",
+    "bonus": {
+      "faith": null,
+      "strength": "D",
+      "intelligence": null,
+      "dexterity": "D"
+    },
+    "id": "88388421-0719-436d-a785-635df038637e"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 14,
+      "intelligence": 0,
+      "dexterity": 14
+    },
+    "category": "c1cb37db64cee12c66f93510",
+    "weight": 5,
+    "damage": {
+      "physical": 100,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 130,
+    "name": "Great Scythe",
+    "attackType": "slash",
+    "bonus": {
+      "faith": null,
+      "strength": "E",
+      "intelligence": null,
+      "dexterity": "B"
+    },
+    "id": "b96f1c5e-fae3-4fde-97ab-f964dbaae941"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 32,
+      "intelligence": 0,
+      "dexterity": 8
+    },
+    "category": "c7cb37db64aee52c66f99510",
+    "weight": 14,
+    "damage": {
+      "physical": 140,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 230,
+    "name": "Greataxe",
+    "attackType": "regular",
+    "bonus": {
+      "faith": null,
+      "strength": "C",
+      "intelligence": null,
+      "dexterity": "E"
+    },
+    "id": "35f2f986-cf7d-4033-a885-4595a1a4b906"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 28,
+      "intelligence": 0,
+      "dexterity": 10
+    },
+    "category": "c1cb27db63cee99c33f99510",
+    "weight": 12,
+    "damage": {
+      "physical": 130,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 200,
+    "name": "Greatsword",
+    "attackType": "regular/thrust",
+    "bonus": {
+      "faith": null,
+      "strength": "C",
+      "intelligence": null,
+      "dexterity": "D"
+    },
+    "id": "e96c2ee4-50c8-4ccc-b2d2-33397b4d2df2"
+  },
+  {
+    "requirements": {
+      "faith": 20,
+      "strength": 24,
+      "intelligence": 20,
+      "dexterity": 18
+    },
+    "category": "c1cb376964cee52c66a99510",
+    "weight": 10,
+    "damage": {
+      "physical": 120,
+      "magic": 85,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 400,
+    "name": "Greatsword of Artorias",
+    "attackType": "regular/thrust",
+    "bonus": {
+      "faith": "B",
+      "strength": "C",
+      "intelligence": "B",
+      "dexterity": "C"
+    },
+    "id": "ff44d96c-a8d4-4f83-83d9-7a71447c3441"
+  },
+  {
+    "requirements": {
+      "faith": 18,
+      "strength": 24,
+      "intelligence": 18,
+      "dexterity": 18
+    },
+    "category": "c1cb376964cee52c66a99510",
+    "weight": 10,
+    "damage": {
+      "physical": 178,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 400,
+    "name": "Greatsword of Artorias Cursed",
+    "attackType": "regular/thrust",
+    "bonus": {
+      "faith": "C",
+      "strength": "C",
+      "intelligence": "C",
+      "dexterity": "C"
+    },
+    "id": "95bc1b9f-43f1-4c04-9a1e-0c8e1601a63a"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 15,
+      "intelligence": 0,
+      "dexterity": 10
+    },
+    "category": "c1cb37aa64cbe52c66f99510",
+    "weight": 5,
+    "damage": {
+      "physical": 84,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 250,
+    "name": "Guardian Tail",
+    "attackType": "regular",
+    "bonus": {
+      "faith": null,
+      "strength": null,
+      "intelligence": null,
+      "dexterity": "C"
+    },
+    "id": "331e71d3-39f1-4024-bfec-fbfdd34861e6"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 16,
+      "intelligence": 0,
+      "dexterity": 12
+    },
+    "category": "c1cb37db64cee12c66f93510",
+    "weight": 6,
+    "damage": {
+      "physical": 110,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 200,
+    "name": "Halberd",
+    "attackType": "regular",
+    "bonus": {
+      "faith": null,
+      "strength": "D",
+      "intelligence": null,
+      "dexterity": "C"
+    },
+    "id": "284e9838-b428-4ed3-872a-6c251ebdca7f"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 14,
+      "intelligence": 0,
+      "dexterity": 0
+    },
+    "category": "c1cb37db64cee1a166f93510",
+    "weight": 5,
+    "damage": {
+      "physical": 115,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 64
+    },
+    "durability": 250,
+    "name": "Hammer of Vamos",
+    "attackType": "strike",
+    "bonus": {
+      "faith": null,
+      "strength": "C",
+      "intelligence": null,
+      "dexterity": null
+    },
+    "id": "cf5f972b-e019-459c-b790-ab9552a91040"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 8,
+      "intelligence": 0,
+      "dexterity": 8
+    },
+    "category": "a1cb37db64cee52c66f99510",
+    "weight": 2,
+    "damage": {
+      "physical": 80,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 250,
+    "name": "Hand Axe",
+    "attackType": "regular",
+    "bonus": {
+      "faith": null,
+      "strength": "C",
+      "intelligence": null,
+      "dexterity": "D"
+    },
+    "id": "dac58662-1ad5-4bcd-856e-57289627568d"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 14,
+      "intelligence": 0,
+      "dexterity": 8
+    },
+    "category": "c1cb37db64cee52c66f99510",
+    "weight": 5,
+    "damage": {
+      "physical": 55,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 150,
+    "name": "Heavy Crossbow",
+    "attackType": "none",
+    "bonus": {
+      "faith": null,
+      "strength": null,
+      "intelligence": null,
+      "dexterity": null
+    },
+    "id": "6ce8dd4d-c26d-4978-8897-f628e9c19a60"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 14,
+      "intelligence": 0,
+      "dexterity": 20
+    },
+    "category": "c1cb37db64cea12c66f99910",
+    "weight": 5,
+    "damage": {
+      "physical": 88,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 80,
+    "name": "Iaito",
+    "attackType": "slash",
+    "bonus": {
+      "faith": null,
+      "strength": null,
+      "intelligence": null,
+      "dexterity": "B"
+    },
+    "id": "c771989d-1b92-4695-bdbe-d80f68b205b1"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 7,
+      "intelligence": 0,
+      "dexterity": 0
+    },
+    "category": "e1cb37db64cee52c66f99510",
+    "weight": 1.5,
+    "damage": {
+      "physical": 155,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 100,
+    "name": "Jagged Ghost Blade",
+    "attackType": "thrust/slash",
+    "bonus": {
+      "faith": null,
+      "strength": "E",
+      "intelligence": null,
+      "dexterity": null
+    },
+    "id": "12721adc-e58c-49fb-915b-5d108dfea543"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 26,
+      "intelligence": 0,
+      "dexterity": 0
+    },
+    "category": "c1cb37db64cee52c66f99516",
+    "weight": 11,
+    "damage": {
+      "physical": 120,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 250,
+    "name": "Large Club",
+    "attackType": "strike",
+    "bonus": {
+      "faith": null,
+      "strength": "A",
+      "intelligence": null,
+      "dexterity": null
+    },
+    "id": "d96ecc3d-f393-4680-b9f2-be3666cc134a"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 16,
+      "intelligence": 0,
+      "dexterity": 14
+    },
+    "category": "c1cb37db64cee12c66f93510",
+    "weight": 6,
+    "damage": {
+      "physical": 180,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 100,
+    "name": "Lifehunt Scythe",
+    "attackType": "slash",
+    "bonus": {
+      "faith": null,
+      "strength": "E",
+      "intelligence": null,
+      "dexterity": "B"
+    },
+    "id": "05a163b7-2776-4a0e-b4fd-d62ea602214b"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 10,
+      "intelligence": 0,
+      "dexterity": 8
+    },
+    "category": "c1cb37db64cee52c66f99510",
+    "weight": 3,
+    "damage": {
+      "physical": 50,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 150,
+    "name": "Light Crossbow",
+    "attackType": "none",
+    "bonus": {
+      "faith": null,
+      "strength": null,
+      "intelligence": null,
+      "dexterity": null
+    },
+    "id": "c3c3fda0-8650-4568-961a-0d7c342c9c3c"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 9,
+      "intelligence": 0,
+      "dexterity": 14
+    },
+    "category": "b1cb37db64cee52c66f99510",
+    "weight": 1,
+    "damage": {
+      "physical": 36,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 100,
+    "name": "Longbow",
+    "attackType": "none",
+    "bonus": {
+      "faith": null,
+      "strength": "D",
+      "intelligence": null,
+      "dexterity": "A"
+    },
+    "id": "7efc17ba-8599-4929-8cac-b5ec17b2bea1"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 10,
+      "intelligence": 0,
+      "dexterity": 10
+    },
+    "category": "c0cb37db64cab52c01f91317",
+    "weight": 3,
+    "damage": {
+      "physical": 80,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 200,
+    "name": "Longsword",
+    "attackType": "regular/thrust",
+    "bonus": {
+      "faith": null,
+      "strength": "C",
+      "intelligence": null,
+      "dexterity": "C"
+    },
+    "id": "13689222-c105-405d-9a5f-eeec1d217436"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 15,
+      "intelligence": 0,
+      "dexterity": 12
+    },
+    "category": "c1cb37db64cee12c66f93510",
+    "weight": 5.5,
+    "damage": {
+      "physical": 110,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 200,
+    "name": "Lucerne",
+    "attackType": "thrust",
+    "bonus": {
+      "faith": null,
+      "strength": "D",
+      "intelligence": null,
+      "dexterity": "D"
+    },
+    "id": "415087c3-97fc-4fd9-83a5-ebf0a6d793f5"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 12,
+      "intelligence": 0,
+      "dexterity": 0
+    },
+    "category": "c1cb37db64cee1a166f93510",
+    "weight": 4,
+    "damage": {
+      "physical": 91,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 250,
+    "name": "Mace",
+    "attackType": "strike",
+    "bonus": {
+      "faith": null,
+      "strength": "B",
+      "intelligence": null,
+      "dexterity": null
+    },
+    "id": "09a06124-8bf0-4bf9-bab5-065349c549ad"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 5,
+      "intelligence": 0,
+      "dexterity": 12
+    },
+    "category": "c1cb37db64cbe52c66f00114",
+    "weight": 0.5,
+    "damage": {
+      "physical": 57,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 200,
+    "name": "Mail Breaker",
+    "attackType": "thrust",
+    "bonus": {
+      "faith": null,
+      "strength": "D",
+      "intelligence": null,
+      "dexterity": "C"
+    },
+    "id": "418ec379-7889-4e27-a5b2-23979723efcb"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 24,
+      "intelligence": 0,
+      "dexterity": 0
+    },
+    "category": "c1cb376964cee52c66a99510",
+    "weight": 10,
+    "damage": {
+      "physical": 110,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 300,
+    "name": "Man Serpent Greatsword",
+    "attackType": "regular",
+    "bonus": {
+      "faith": null,
+      "strength": "B",
+      "intelligence": null,
+      "dexterity": null
+    },
+    "id": "874e8c97-1b81-4f3e-bc5b-31d4eb0c3247"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 12,
+      "intelligence": 14,
+      "dexterity": 0
+    },
+    "category": "c0cb37db64cee52c01f91510",
+    "weight": 4,
+    "damage": {
+      "physical": 0,
+      "magic": 120,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 160,
+    "name": "Moonlight Butterfly Horn",
+    "attackType": "thrust",
+    "bonus": {
+      "faith": null,
+      "strength": null,
+      "intelligence": "B",
+      "dexterity": null
+    },
+    "id": "1d8f88fc-42da-422a-ad4d-bd9a4d2b3b25"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 16,
+      "intelligence": 28,
+      "dexterity": 10
+    },
+    "category": "c1cb376964cee52c66a99510",
+    "weight": 6,
+    "damage": {
+      "physical": 0,
+      "magic": 132,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 300,
+    "name": "Moonlight Greatsword",
+    "attackType": "regular",
+    "bonus": {
+      "faith": null,
+      "strength": null,
+      "intelligence": "A",
+      "dexterity": null
+    },
+    "id": "c08ea542-2a64-457a-9891-e098651327e0"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 11,
+      "intelligence": 0,
+      "dexterity": 0
+    },
+    "category": "c1cb37db64cee1a166f93510",
+    "weight": 4,
+    "damage": {
+      "physical": 83,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 180,
+    "name": "Morning Star",
+    "attackType": "strike",
+    "bonus": {
+      "faith": null,
+      "strength": "C",
+      "intelligence": null,
+      "dexterity": null
+    },
+    "id": "f2f9c62f-58ce-446a-b623-ae059418a74c"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 28,
+      "intelligence": 0,
+      "dexterity": 13
+    },
+    "category": "d1cb37db64cee52c66f99510",
+    "weight": 12,
+    "damage": {
+      "physical": 113,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 180,
+    "name": "Murakumo",
+    "attackType": "slash",
+    "bonus": {
+      "faith": null,
+      "strength": "E",
+      "intelligence": null,
+      "dexterity": "B"
+    },
+    "id": "6b849ed8-b4f2-418e-8c0b-7d2c29534a81"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 8,
+      "intelligence": 0,
+      "dexterity": 16
+    },
+    "category": "c1cb37aa64cbe52c66f99510",
+    "weight": 2,
+    "damage": {
+      "physical": 76,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 200,
+    "name": "Notched Whip",
+    "attackType": "regular",
+    "bonus": {
+      "faith": null,
+      "strength": null,
+      "intelligence": null,
+      "dexterity": "B"
+    },
+    "id": "ceec49ec-40f6-4b7c-995d-7b4a5f5a382b"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 20,
+      "intelligence": 0,
+      "dexterity": 16
+    },
+    "category": "c1cb376964cee52c66a99510",
+    "weight": 8,
+    "damage": {
+      "physical": 320,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 350,
+    "name": "Obsidian Greatsword",
+    "attackType": "regular",
+    "bonus": {
+      "faith": null,
+      "strength": null,
+      "intelligence": null,
+      "dexterity": null
+    },
+    "id": "7bccedb4-b572-4070-930b-f174f73423cc"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 7,
+      "intelligence": 0,
+      "dexterity": 20
+    },
+    "category": "e1cb37db64cee52c66f99510",
+    "weight": 1.5,
+    "damage": {
+      "physical": 76,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 100,
+    "name": "Painting Guardian Sword",
+    "attackType": "slash",
+    "bonus": {
+      "faith": null,
+      "strength": "E",
+      "intelligence": null,
+      "dexterity": "A"
+    },
+    "id": "aa6c2c50-ff93-4541-92b4-303c5c8451b6"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 5,
+      "intelligence": 0,
+      "dexterity": 14
+    },
+    "category": "f1cb37db64cee52c66f99510",
+    "weight": 0.5,
+    "damage": {
+      "physical": 135,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 200,
+    "name": "Parrying Dagger",
+    "attackType": "thrust/slash",
+    "bonus": {
+      "faith": null,
+      "strength": "E",
+      "intelligence": null,
+      "dexterity": "A"
+    },
+    "id": "c6c909c7-e9c8-4f7c-a4af-9617dca5c562"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 13,
+      "intelligence": 0,
+      "dexterity": 12
+    },
+    "category": "c0cb37db64cee52c01f91510",
+    "weight": 4.5,
+    "damage": {
+      "physical": 128,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 160,
+    "name": "Partizan",
+    "attackType": "regular/thrust",
+    "bonus": {
+      "faith": null,
+      "strength": "D",
+      "intelligence": null,
+      "dexterity": "C"
+    },
+    "id": "eb041180-721d-4dd2-9781-395c8a630dcc"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 14,
+      "intelligence": 0,
+      "dexterity": 0
+    },
+    "category": "c1cb37db64cee1a166f93510",
+    "weight": 5,
+    "damage": {
+      "physical": 89,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 250,
+    "name": "Pickaxe",
+    "attackType": "thrust",
+    "bonus": {
+      "faith": null,
+      "strength": "B",
+      "intelligence": null,
+      "dexterity": null
+    },
+    "id": "7dbac0b4-6340-4fdd-a9c9-f93840abd9ef"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 24,
+      "intelligence": 0,
+      "dexterity": 10
+    },
+    "category": "c0cb37db64cee52c01f91510",
+    "weight": 10,
+    "damage": {
+      "physical": 86,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 180,
+    "name": "Pike",
+    "attackType": "thrust",
+    "bonus": {
+      "faith": null,
+      "strength": "D",
+      "intelligence": null,
+      "dexterity": "C"
+    },
+    "id": "8739e404-97f5-4ae6-97cd-54104bd60fb7"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 6,
+      "intelligence": 0,
+      "dexterity": 20
+    },
+    "category": "f1cb37db64cee52c66f99510",
+    "weight": 1,
+    "damage": {
+      "physical": 80,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 100,
+    "name": "Priscilla's Dagger",
+    "attackType": "slash",
+    "bonus": {
+      "faith": null,
+      "strength": null,
+      "intelligence": null,
+      "dexterity": "A"
+    },
+    "id": "4048ea05-c153-4379-9efc-eccf890194cf"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 11,
+      "intelligence": 0,
+      "dexterity": 13
+    },
+    "category": "e1cb37db64cee52c66f99510",
+    "weight": 3.5,
+    "damage": {
+      "physical": 60,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 170
+    },
+    "durability": 600,
+    "name": "Quelaag's Furysword",
+    "attackType": "slash",
+    "bonus": {
+      "faith": null,
+      "strength": "E",
+      "intelligence": null,
+      "dexterity": "B"
+    },
+    "id": "b2f737b9-0865-4eec-aecd-2bcdf63e73c6"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 7,
+      "intelligence": 0,
+      "dexterity": 12
+    },
+    "category": "c1cb37db64cbe52c66f00114",
+    "weight": 1.5,
+    "damage": {
+      "physical": 175,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 150,
+    "name": "Rapier",
+    "attackType": "thrust",
+    "bonus": {
+      "faith": null,
+      "strength": "D",
+      "intelligence": null,
+      "dexterity": "B"
+    },
+    "id": "4d7b6b30-26b7-4839-ac31-c6423a229149"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 12,
+      "intelligence": 0,
+      "dexterity": 0
+    },
+    "category": "c1cb37db64cee1a166f93510",
+    "weight": 4,
+    "damage": {
+      "physical": 97,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 100,
+    "name": "Reinforced Club",
+    "attackType": "strike",
+    "bonus": {
+      "faith": null,
+      "strength": "C",
+      "intelligence": null,
+      "dexterity": null
+    },
+    "id": "4ff92d3a-1da2-493e-ba37-bab8588780d7"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 8,
+      "intelligence": 0,
+      "dexterity": 20
+    },
+    "category": "c1cb37db64cbe52c66f00114",
+    "weight": 2,
+    "damage": {
+      "physical": 70,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 100,
+    "name": "Ricard's Rapier",
+    "attackType": "thrust",
+    "bonus": {
+      "faith": null,
+      "strength": "E",
+      "intelligence": null,
+      "dexterity": "B"
+    },
+    "id": "34e29313-7595-4820-ab41-58a7f3fc9251"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 7,
+      "intelligence": 0,
+      "dexterity": 13
+    },
+    "category": "e1cb37db64cee52c66f99510",
+    "weight": 1.5,
+    "damage": {
+      "physical": 200,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 160,
+    "name": "Scimitar",
+    "attackType": "slash",
+    "bonus": {
+      "faith": null,
+      "strength": "E",
+      "intelligence": null,
+      "dexterity": "A"
+    },
+    "id": "f39adea5-2da3-4060-ac46-41fbe6e2bb61"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 14,
+      "intelligence": 0,
+      "dexterity": 12
+    },
+    "category": "c1cb37db64cee12c66f93510",
+    "weight": 5,
+    "damage": {
+      "physical": 110,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 150,
+    "name": "Scythe",
+    "attackType": "slash",
+    "bonus": {
+      "faith": null,
+      "strength": "E",
+      "intelligence": null,
+      "dexterity": "C"
+    },
+    "id": "9bfd2cef-e653-442b-8632-85a0f8a64f26"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 24,
+      "intelligence": 0,
+      "dexterity": 13
+    },
+    "category": "d1cb37db64cee52c66f99510",
+    "weight": 10,
+    "damage": {
+      "physical": 128,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 140,
+    "name": "Server",
+    "attackType": "slash",
+    "bonus": {
+      "faith": null,
+      "strength": "E",
+      "intelligence": null,
+      "dexterity": "C"
+    },
+    "id": "d68ff6af-db20-478a-8e89-a71eb4837279"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 7,
+      "intelligence": 0,
+      "dexterity": 12
+    },
+    "category": "b1cb37db64cee52c66f99510",
+    "weight": 0.5,
+    "damage": {
+      "physical": 31,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 100,
+    "name": "Short Bow",
+    "attackType": "none",
+    "bonus": {
+      "faith": null,
+      "strength": "D",
+      "intelligence": null,
+      "dexterity": "A"
+    },
+    "id": "c6355e8c-19a8-486c-a102-4ee9c22118c6"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 8,
+      "intelligence": 0,
+      "dexterity": 10
+    },
+    "category": "c0cb37db64cab52c01f91317",
+    "weight": 2,
+    "damage": {
+      "physical": 78,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 200,
+    "name": "Shortsword",
+    "attackType": "regular/thrust",
+    "bonus": {
+      "faith": null,
+      "strength": "C",
+      "intelligence": null,
+      "dexterity": "C"
+    },
+    "id": "52c69caa-3fa1-439a-9f62-25995b5d0b7e"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 9,
+      "intelligence": 0,
+      "dexterity": 14
+    },
+    "category": "e1cb37db64cee52c66f99510",
+    "weight": 2.5,
+    "damage": {
+      "physical": 82,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 120,
+    "name": "Shotel",
+    "attackType": "slash",
+    "bonus": {
+      "faith": null,
+      "strength": "E",
+      "intelligence": null,
+      "dexterity": "C"
+    },
+    "id": "ff6643f5-bb74-4f57-b6f6-d2c78a4401ff"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 16,
+      "intelligence": 0,
+      "dexterity": 22
+    },
+    "category": "c0cb37db64cee52c01f91510",
+    "weight": 6,
+    "damage": {
+      "physical": 169,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 300,
+    "name": "Silver Knight Spear",
+    "attackType": "regular/thrust",
+    "bonus": {
+      "faith": null,
+      "strength": "E",
+      "intelligence": null,
+      "dexterity": "C"
+    },
+    "id": "00298815-9478-4fcf-99ab-afdbff5a516b"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 16,
+      "intelligence": 0,
+      "dexterity": 22
+    },
+    "category": "c0cb37db64cab52c01f91317",
+    "weight": 6,
+    "damage": {
+      "physical": 175,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 300,
+    "name": "Silver Knight Straight Sword",
+    "attackType": "regular",
+    "bonus": {
+      "faith": null,
+      "strength": "E",
+      "intelligence": null,
+      "dexterity": "C"
+    },
+    "id": "909b28c4-a013-473d-bcce-a37f9986b432"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 58,
+      "intelligence": 0,
+      "dexterity": 0
+    },
+    "category": "c1cb37db64cee52c66f99516",
+    "weight": 28,
+    "damage": {
+      "physical": 300,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 600,
+    "name": "Smough's Hammer",
+    "attackType": "strike",
+    "bonus": {
+      "faith": null,
+      "strength": "D",
+      "intelligence": null,
+      "dexterity": null
+    },
+    "id": "cddc654f-9662-4abd-a16a-5d0e98a5fd2c"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 20,
+      "intelligence": 0,
+      "dexterity": 16
+    },
+    "category": "c1cb37db64cee52c66f99510",
+    "weight": 8,
+    "damage": {
+      "physical": 52,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 150,
+    "name": "Sniper Crossbow",
+    "attackType": "none",
+    "bonus": {
+      "faith": null,
+      "strength": null,
+      "intelligence": null,
+      "dexterity": null
+    },
+    "id": "9d8206d5-f961-4f1c-b76f-d0fef1d5e7dc"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 11,
+      "intelligence": 0,
+      "dexterity": 10
+    },
+    "category": "c0cb37db64cee52c01f91510",
+    "weight": 3.5,
+    "damage": {
+      "physical": 80,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 180,
+    "name": "Spear",
+    "attackType": "thrust",
+    "bonus": {
+      "faith": null,
+      "strength": "D",
+      "intelligence": null,
+      "dexterity": "C"
+    },
+    "id": "56853276-0c88-4600-8728-c2c051374fe8"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 48,
+      "intelligence": 0,
+      "dexterity": 10
+    },
+    "category": "c7cb37db64aee52c66f99510",
+    "weight": 24,
+    "damage": {
+      "physical": 190,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 700,
+    "name": "Stone Greataxe",
+    "attackType": "regular",
+    "bonus": {
+      "faith": null,
+      "strength": "B",
+      "intelligence": null,
+      "dexterity": "E"
+    },
+    "id": "dffc3114-a6d9-4a9e-aaab-2140cbab4036"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 40,
+      "intelligence": 0,
+      "dexterity": 10
+    },
+    "category": "c1cb376964cee52c66a99510",
+    "weight": 18,
+    "damage": {
+      "physical": 148,
+      "magic": 100,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 800,
+    "name": "Stone Greatsword",
+    "attackType": "regular",
+    "bonus": {
+      "faith": null,
+      "strength": "C",
+      "intelligence": "E",
+      "dexterity": "C"
+    },
+    "id": "3060f206-fc54-4fc1-8b78-aa977b50914d"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 6,
+      "intelligence": 0,
+      "dexterity": 6
+    },
+    "category": "c0cb37db64cab52c01f91317",
+    "weight": 1,
+    "damage": {
+      "physical": 20,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 200,
+    "name": "Straight Sword Hilt",
+    "attackType": "regular/thrust",
+    "bonus": {
+      "faith": null,
+      "strength": "E",
+      "intelligence": null,
+      "dexterity": "E"
+    },
+    "id": "01cf3468-898c-4d84-9251-f126a96df564"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 12,
+      "intelligence": 0,
+      "dexterity": 12
+    },
+    "category": "c0cb37db64cab52c01f91317",
+    "weight": 4,
+    "damage": {
+      "physical": 98,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 240,
+    "name": "Sunlight Straight Sword",
+    "attackType": "regular/thrust",
+    "bonus": {
+      "faith": null,
+      "strength": "C",
+      "intelligence": null,
+      "dexterity": "C"
+    },
+    "id": "c59f61a7-97b4-49a6-8f07-db3682b72704"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 16,
+      "intelligence": 0,
+      "dexterity": 14
+    },
+    "category": "c1cb37db64cee12c66f93510",
+    "weight": 6,
+    "damage": {
+      "physical": 125,
+      "magic": 145,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 600,
+    "name": "Titanite Catch Pole",
+    "attackType": "regular",
+    "bonus": {
+      "faith": null,
+      "strength": "D",
+      "intelligence": "D",
+      "dexterity": "D"
+    },
+    "id": "5ddb2111-9f46-4234-a1fd-00c03ea0b99e"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 14,
+      "intelligence": 0,
+      "dexterity": 14
+    },
+    "category": "c1cb37db64cea12c66f99910",
+    "weight": 5,
+    "damage": {
+      "physical": 90,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 80,
+    "name": "Uchigatana",
+    "attackType": "thrust/slash",
+    "bonus": {
+      "faith": null,
+      "strength": null,
+      "intelligence": null,
+      "dexterity": "B"
+    },
+    "id": "7f1a3a0e-7b5e-44d0-b8e2-ce09eccd44b5"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 8,
+      "intelligence": 16,
+      "dexterity": 16
+    },
+    "category": "c1cb37db64cbe52c66f00114",
+    "weight": 2,
+    "damage": {
+      "physical": 62,
+      "magic": 104,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 130,
+    "name": "Velka's Rapier",
+    "attackType": "regular/thrust",
+    "bonus": {
+      "faith": null,
+      "strength": "E",
+      "intelligence": "B",
+      "dexterity": "C"
+    },
+    "id": "9fa73754-5696-4f0c-9432-3378dbb5ebd9"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 11,
+      "intelligence": 0,
+      "dexterity": 10
+    },
+    "category": "c1cb37db64cee1a166f93510",
+    "weight": 3.5,
+    "damage": {
+      "physical": 91,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 220,
+    "name": "Warpick",
+    "attackType": "thrust",
+    "bonus": {
+      "faith": null,
+      "strength": "C",
+      "intelligence": null,
+      "dexterity": "D"
+    },
+    "id": "1f6b4ea5-f23a-415b-a325-2b5aa29892de"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 20,
+      "intelligence": 0,
+      "dexterity": 16
+    },
+    "category": "c1cb37db64cea12c66f99910",
+    "weight": 8,
+    "damage": {
+      "physical": 90,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 60,
+    "name": "Washing Pole",
+    "attackType": "thrust/slash",
+    "bonus": {
+      "faith": null,
+      "strength": "D",
+      "intelligence": null,
+      "dexterity": "D"
+    },
+    "id": "e294e491-2012-4b1f-9f6a-b57b9b3aadc3"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 7,
+      "intelligence": 0,
+      "dexterity": 14
+    },
+    "category": "c1cb37aa64cbe52c66f99510",
+    "weight": 1.5,
+    "damage": {
+      "physical": 80,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 200,
+    "name": "Whip",
+    "attackType": "regular",
+    "bonus": {
+      "faith": null,
+      "strength": null,
+      "intelligence": null,
+      "dexterity": "B"
+    },
+    "id": "59317aaf-61f2-43c4-b847-a9083ed568ee"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 13,
+      "intelligence": 0,
+      "dexterity": 15
+    },
+    "category": "c0cb37db64cee52c01f91510",
+    "weight": 4.5,
+    "damage": {
+      "physical": 86,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 140,
+    "name": "Winged Spear",
+    "attackType": "thrust",
+    "bonus": {
+      "faith": null,
+      "strength": "E",
+      "intelligence": null,
+      "dexterity": "C"
+    },
+    "id": "821bb21f-cc18-49cb-8fe1-648bb3a82a04"
+  },
+  {
+    "requirements": {
+      "faith": 0,
+      "strength": 24,
+      "intelligence": 0,
+      "dexterity": 10
+    },
+    "category": "c1cb27db63cee99c33f99510",
+    "weight": 10,
+    "damage": {
+      "physical": 130,
+      "magic": 0,
+      "lightning": 0,
+      "fire": 0
+    },
+    "durability": 200,
+    "name": "Zweihander",
+    "attackType": "regular",
+    "bonus": {
+      "faith": null,
+      "strength": "C",
+      "intelligence": null,
+      "dexterity": "D"
+    },
+    "id": "313ae387-8e3e-4942-a0d1-af925346f38f"
+  }
+]
