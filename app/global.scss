@@ -7,3 +7,14 @@
   font-family: 'Optimus Princeps';
   src: url('/fonts/OptimusPrinceps.ttf');
 }
+
+body {
+  margin: 0;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+
+  main {
+    font-family: 'Optimus Princeps';
+  }
+}
