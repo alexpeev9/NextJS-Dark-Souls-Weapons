@@ -1,8 +1,4 @@
-export default function CategoriesLayout({
-  children
-}: {
-  children: React.ReactNode
-}) {
+export default function Layout({ children }: { children: React.ReactNode }) {
   const categoriesData = [
     {
       id: 'a1cb37db64cee52c66f99510',
