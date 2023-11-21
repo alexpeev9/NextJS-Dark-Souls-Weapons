@@ -1,12 +1,8 @@
-interface Weapon {
-  slug: string
-  name: string
-}
+import Base from './Base'
+import NavigationLink from './NavigationLink'
 
-export default interface Category {
-  name: string
-  slug: string
+export default interface Category extends Base {
   description: string
   imageUrl: string
-  weapons: Weapon[]
+  weapons: NavigationLink[]
 }
