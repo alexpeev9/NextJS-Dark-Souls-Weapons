@@ -1,18 +1,14 @@
-import { NextResponse } from 'next/server'
+import { NextRequest, NextResponse } from 'next/server'
 import { sql } from '@vercel/postgres'
 
 import Category from '@/types/Category'
 
-export async function GET(request: Request) {
+export async function GET(
+  request: NextRequest,
+  { params }: { params: { slug: string } }
+) {
   try {
-    const { searchParams } = new URL(request.url)
-    const slug = searchParams.get('slug')
-
-    if (!slug) {
-      return NextResponse.json('Slug parameter is not set', {
-        status: 400
-      })
-    }
+    const slug = params.slug
 
     const data = await sql<Category>`
       SELECT

@@ -1,11 +1,11 @@
-import { NextResponse } from 'next/server'
+import { NextRequest,NextResponse } from 'next/server'
 import { sql } from '@vercel/postgres'
 
 import Weapon from '@/types/Weapon'
 
-export async function GET(request: Request) {
+export async function GET(request: NextRequest) {
   try {
-    const { searchParams } = new URL(request.url)
+    const { searchParams } = request.nextUrl
     const slug = searchParams.get('slug')
 
     if (!slug) {
