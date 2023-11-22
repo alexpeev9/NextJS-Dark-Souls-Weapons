@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import './global.scss'
 import Navigation from '@/components/navigation'
+import { useState } from 'react'
+import { QueryClient, QueryClientProvider } from 'react-query'
 
 export const metadata: Metadata = {
   title: {
@@ -15,11 +17,14 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const [queryClient] = useState(() => new QueryClient())
   return (
     <html lang='en'>
       <body>
-        <Navigation />
-        {children}
+        <QueryClientProvider client={queryClient}>
+          <Navigation />
+          {children}
+        </QueryClientProvider>
       </body>
     </html>
   )

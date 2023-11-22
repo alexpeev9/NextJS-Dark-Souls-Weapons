@@ -1,7 +1,7 @@
 import { NextRequest,NextResponse } from 'next/server'
 import { sql } from '@vercel/postgres'
 
-import Weapon from '@/types/Weapon'
+import Weapon from '@/utils/types/Weapon'
 
 export async function GET(request: NextRequest) {
   try {

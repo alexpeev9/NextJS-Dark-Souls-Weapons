@@ -7,12 +7,13 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "seed": "node -r dotenv/config ./seed"
+    "seed": "node -r dotenv/config ./utils/seed"
   },
   "dependencies": {
     "next": "14.0.2",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-query": "^3.39.3"
   },
   "devDependencies": {
     "@types/node": "^20",

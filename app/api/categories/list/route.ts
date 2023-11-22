@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server'
 import { sql } from '@vercel/postgres'
 
-import Category from '@/types/Category'
+import Category from '@/utils/types/Category'
 
 export async function GET() {
   try {
