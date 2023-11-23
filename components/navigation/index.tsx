@@ -3,28 +3,30 @@
 import Link from 'next/link'
 import './navigation.module.scss'
 
-import useGetCategoryLinks from './hooks/useGetCategoryLinks'
 import NavigationLink from '@/utils/types/NavigationLink'
-import { redirect } from 'next/navigation'
+import useFetch from '@/utils/hooks/useFetch'
+import NavigationSkeleton from './navigationSkeleton'
 
 export default function Navigation() {
-  const { isLoading, data: categoryNavLinks } = useGetCategoryLinks()
+  const { responseData: categoryNavLinks, loading } = useFetch<
+    NavigationLink[]
+  >({
+    method: 'get',
+    url: 'categories/list'
+  })
 
-  if (isLoading) {
-    return <>Loading</>
-  }
-
-  if (!categoryNavLinks) {
-    return <>Not Found</>
+  if (loading) {
+    return <NavigationSkeleton />
   }
 
   return (
     <nav className='navigation'>
-      {categoryNavLinks.map((category: NavigationLink) => (
-        <Link href={`/categories/${category.slug}`} key={category.slug}>
-          {category.name}
-        </Link>
-      ))}
+      {categoryNavLinks &&
+        categoryNavLinks.map((category: NavigationLink, key) => (
+          <Link href={`/categories/${category.slug}`} key={key}>
+            {category.name}
+          </Link>
+        ))}
     </nav>
   )
 }

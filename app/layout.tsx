@@ -1,7 +1,8 @@
+import Navigation from '@/components/navigation'
 import './global.scss'
 
-import Navigation from '@/components/navigation'
-import Provider from '@/components/provider'
+import { ErrorProvider } from '@/utils/contexts/ErrorContext'
+import Header from '@/components/header'
 
 export default async function RootLayout({
   children
@@ -11,10 +12,11 @@ export default async function RootLayout({
   return (
     <html lang='en'>
       <body>
-        <Provider>
+        <ErrorProvider>
+          <Header />
           <Navigation />
           {children}
-        </Provider>
+        </ErrorProvider>
       </body>
     </html>
   )

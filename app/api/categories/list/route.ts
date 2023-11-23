@@ -1,7 +1,7 @@
-import { NextResponse } from 'next/server'
 import { sql } from '@vercel/postgres'
 
 import Category from '@/utils/types/Category'
+import { nextResponse, NOT_FOUND, OK, SERVER_ERROR } from '@/utils/apiHelper'
 
 export async function GET() {
   try {
@@ -15,15 +15,11 @@ export async function GET() {
         categories.name ASC`
 
     if (!data.rowCount) {
-      return NextResponse.json('Categories not found', {
-        status: 404
-      })
+      return nextResponse(NOT_FOUND, { message: 'Categories not found' })
     }
 
-    return NextResponse.json(data.rows)
+    return nextResponse(OK, data.rows)
   } catch (error: any) {
-    return NextResponse.json(`Error ${error.message}`, {
-      status: 500
-    })
+    return nextResponse(SERVER_ERROR, { message: error.message })
   }
 }

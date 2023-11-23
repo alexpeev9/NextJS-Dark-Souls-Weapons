@@ -1,18 +1,15 @@
-import { NextRequest,NextResponse } from 'next/server'
+import { NextRequest } from 'next/server'
 import { sql } from '@vercel/postgres'
 
 import Weapon from '@/utils/types/Weapon'
+import { NOT_FOUND, OK, SERVER_ERROR, nextResponse } from '@/utils/apiHelper'
 
-export async function GET(request: NextRequest) {
+export async function GET(
+  request: NextRequest,
+  { params }: { params: { slug: string } }
+) {
   try {
-    const { searchParams } = request.nextUrl
-    const slug = searchParams.get('slug')
-
-    if (!slug) {
-      return NextResponse.json('Slug parameter is not set', {
-        status: 400
-      })
-    }
+    const slug = params.slug
 
     const data = await sql<Weapon>`
       SELECT
@@ -48,15 +45,11 @@ export async function GET(request: NextRequest) {
       LIMIT 1`
 
     if (!data.rowCount) {
-      return NextResponse.json('Weapon not found', {
-        status: 404
-      })
+      return nextResponse(NOT_FOUND, { message: 'Weapon not found' })
     }
 
-    return NextResponse.json(data.rows)
+    return nextResponse(OK, data.rows)
   } catch (error: any) {
-    return NextResponse.json(`Error ${error.message}`, {
-      status: 500
-    })
+    return nextResponse(SERVER_ERROR, { message: error.message })
   }
 }
