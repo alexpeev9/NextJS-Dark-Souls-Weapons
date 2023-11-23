@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react'
-import axios, { AxiosError, AxiosRequestConfig, CancelTokenSource } from 'axios'
+import { useEffect, useRef, useState } from 'react'
+import axios, { AxiosRequestConfig } from 'axios'
 
 import { useErrorContext } from '../contexts/ErrorContext'
 
@@ -19,26 +19,25 @@ const useFetch = <T,>({
   method: MethodTypes
   url: string
 }): UseFetchResult<T> => {
-  let cancelTokenSource: CancelTokenSource | null = null
+  const isFetchingRef = useRef(false)
   const [requestData, setRequestData] = useState<T | null>(null)
   const [responseData, setResponseData] = useState<T | null>(null)
   const [loading, setLoading] = useState<boolean>(false)
   const { setError: setGlobalError } = useErrorContext()
 
   useEffect(() => {
-    // Cleanup validation to cancel double request from strict mode
-    if (cancelTokenSource) {
-      cancelTokenSource.cancel()
+    // Prevent double request from strict mode
+    if (isFetchingRef.current) {
+      return
     }
-    cancelTokenSource = axios.CancelToken.source()
+    isFetchingRef.current = true
 
     const isGetMethod = method === 'get'
     const config: AxiosRequestConfig = {
       method,
       url: `http://localhost:3000/api/${url}`,
       data: requestData,
-      withCredentials: true,
-      cancelToken: cancelTokenSource.token
+      withCredentials: true
     }
 
     if (isGetMethod || requestData) {
@@ -58,6 +57,7 @@ const useFetch = <T,>({
             setRequestData(null)
           }
           setLoading(false)
+          isFetchingRef.current = false
         })
     }
   }, [requestData, url, method, setGlobalError])
