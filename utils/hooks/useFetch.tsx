@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
 import axios, { AxiosRequestConfig } from 'axios'
-
 import { useErrorContext } from '../contexts/ErrorContext'
 
 type MethodTypes = 'get' | 'post' | 'put' | 'patch' | 'delete'
@@ -24,42 +23,41 @@ const useFetch = <T,>({
   const [responseData, setResponseData] = useState<T | null>(null)
   const [loading, setLoading] = useState<boolean>(false)
   const { setError: setGlobalError } = useErrorContext()
-
   useEffect(() => {
-    // Prevent double request from strict mode
-    if (isFetchingRef.current) {
+    const isNotGetMethod = method !== 'get'
+    if (isFetchingRef.current || requestData || isNotGetMethod) {
       return
     }
-    isFetchingRef.current = true
 
-    const isGetMethod = method === 'get'
+    // Set useRef value to true, and prevent from second render
+    isFetchingRef.current = true
+    setLoading(true)
+
     const config: AxiosRequestConfig = {
       method,
-      url: `http://localhost:3000/api/${url}`,
+      url: `/api/${url}`,
       data: requestData,
       withCredentials: true
     }
 
-    if (isGetMethod || requestData) {
-      axios(config)
-        .then((res) => {
-          setResponseData(res.data)
-        })
-        .catch((error) => {
-          setGlobalError(
-            error.response
-              ? `${error.response.data.message}`
-              : 'Something went wrong! Please try again later'
-          )
-        })
-        .finally(() => {
-          if (!isGetMethod) {
-            setRequestData(null)
-          }
-          setLoading(false)
-          isFetchingRef.current = false
-        })
-    }
+    axios(config)
+      .then((res) => {
+        setResponseData(res.data)
+      })
+      .catch((error) => {
+        setGlobalError(
+          error.response
+            ? `${error.response.data.message}`
+            : 'Something went wrong! Please try again later'
+        )
+      })
+      .finally(() => {
+        if (isNotGetMethod) {
+          setRequestData(null)
+        }
+        isFetchingRef.current = false
+        setLoading(false)
+      })
   }, [requestData, url, method, setGlobalError])
 
   return { setRequestData, responseData, loading }
