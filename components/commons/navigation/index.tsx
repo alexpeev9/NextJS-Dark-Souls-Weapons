@@ -1,7 +1,6 @@
 'use client'
 
 import Link from 'next/link'
-import './navigation.module.scss'
 
 import NavigationLink from '@/utils/types/NavigationLink'
 import useFetch from '@/utils/hooks/useFetch'
@@ -20,13 +19,15 @@ export default function Navigation() {
   }
 
   return (
-    <nav className='navigation'>
-      {categoryNavLinks &&
-        categoryNavLinks.map((category: NavigationLink, key) => (
-          <Link href={`/categories/${category.slug}`} key={key}>
-            {category.name}
-          </Link>
-        ))}
+    <nav className='bg-secondary col-span-12 md:col-span-1 h-screen p-3'>
+      <ul className='flex flex-col items-center md:items-start h-16 md:h-full overflow-y-auto'>
+        {categoryNavLinks &&
+          categoryNavLinks.map((category: NavigationLink, key) => (
+            <li key={key}>
+              <Link href={`/categories/${category.slug}`}>{category.name}</Link>
+            </li>
+          ))}
+      </ul>
     </nav>
   )
 }

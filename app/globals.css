@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
   font-family: 'KELMSCOT';
   src: url('/fonts/KELMSCOT.TTF');
@@ -11,10 +15,12 @@
 body {
   margin: 0;
   font-size: 1.5rem;
-  display: flex;
-  flex-direction: row;
+  font-family: 'Optimus Princeps';
+}
 
-  main {
-    font-family: 'Optimus Princeps';
-  }
+h1,
+h2,
+h3,
+.title-font {
+  font-family: 'KELMSCOT';
 }

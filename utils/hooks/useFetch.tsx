@@ -45,10 +45,9 @@ const useFetch = <T,>({
         setResponseData(res.data)
       })
       .catch((error) => {
+        var errorMessage = error.response && error.response.data.message
         setGlobalError(
-          error.response
-            ? `${error.response.data.message}`
-            : 'Something went wrong! Please try again later'
+          errorMessage || 'Something went wrong! Please try again later'
         )
       })
       .finally(() => {

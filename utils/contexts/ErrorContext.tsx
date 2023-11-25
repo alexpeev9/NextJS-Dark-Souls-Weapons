@@ -2,7 +2,7 @@
 
 import { createContext, useContext, useState, useEffect } from 'react'
 
-const milliseconds = 15000
+const milliseconds = 100
 const ErrorContext = createContext<any | null>(null)
 
 export const useErrorContext = () => useContext(ErrorContext)

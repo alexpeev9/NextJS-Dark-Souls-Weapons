@@ -1,8 +1,9 @@
-import Navigation from '@/components/navigation'
-import './global.scss'
-
+import './globals.css'
 import { ErrorProvider } from '@/utils/contexts/ErrorContext'
-import Header from '@/components/header'
+
+import Header from '@/components/commons/header'
+import Navigation from '@/components/commons/navigation'
+import ErrorPopup from '@/components/commons/header/error-popup'
 
 export default async function RootLayout({
   children
@@ -11,10 +12,11 @@ export default async function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body>
+      <body className='grid'>
         <ErrorProvider>
           <Header />
           <Navigation />
+          <ErrorPopup />
           {children}
         </ErrorProvider>
       </body>
