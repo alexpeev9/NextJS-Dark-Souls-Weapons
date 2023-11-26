@@ -11,8 +11,14 @@ module.exports = {
       secondary: '#414855',
       error: '#8b0000'
     },
-    backgroundImage: {
-      'artorias-logo': "url('/images/artorias-logo.svg')"
+    extend: {
+      backgroundImage: {
+        'artorias-logo': "url('/images/artorias-logo.svg')"
+      },
+      height: {
+        content: 'calc(100vh - 7rem)',
+        contentHalf: 'calc((100vh - 7rem) / 2)'
+      }
     }
   },
   plugins: []

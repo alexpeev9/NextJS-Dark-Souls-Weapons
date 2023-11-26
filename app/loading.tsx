@@ -1,5 +1,3 @@
-'use client'
-
 export default function Loading() {
-  return <>Loading...</>
+  return <div className='w-screen h-screen bg-primary'>d</div>
 }

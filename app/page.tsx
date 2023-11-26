@@ -1,3 +1,3 @@
 export default function Home() {
-  return <main className='col-span-11'>Home Page</main>
+  return <main className='col-span-12'>Home Page</main>
 }

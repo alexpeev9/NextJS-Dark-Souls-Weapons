@@ -18,26 +18,26 @@ const useFetch = <T,>({
   method: MethodTypes
   url: string
 }): UseFetchResult<T> => {
-  const isFetchingRef = useRef(false)
   const [requestData, setRequestData] = useState<T | null>(null)
   const [responseData, setResponseData] = useState<T | null>(null)
   const [loading, setLoading] = useState<boolean>(false)
   const { setError: setGlobalError } = useErrorContext()
   useEffect(() => {
+    const source = axios.CancelToken.source()
+
     const isNotGetMethod = method !== 'get'
-    if (isFetchingRef.current || requestData || isNotGetMethod) {
+    if (requestData || isNotGetMethod) {
       return
     }
 
-    // Set useRef value to true, and prevent from second render
-    isFetchingRef.current = true
     setLoading(true)
 
     const config: AxiosRequestConfig = {
       method,
       url: `/api/${url}`,
       data: requestData,
-      withCredentials: true
+      withCredentials: true,
+      cancelToken: source.token
     }
 
     axios(config)
@@ -54,9 +54,13 @@ const useFetch = <T,>({
         if (isNotGetMethod) {
           setRequestData(null)
         }
-        isFetchingRef.current = false
         setLoading(false)
       })
+
+    // Cleanup function
+    return () => {
+      source.cancel('Request canceled due to component unmount')
+    }
   }, [requestData, url, method, setGlobalError])
 
   return { setRequestData, responseData, loading }

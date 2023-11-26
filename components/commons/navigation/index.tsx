@@ -1,32 +1,12 @@
-'use client'
-
-import Link from 'next/link'
-
-import NavigationLink from '@/utils/types/NavigationLink'
-import useFetch from '@/utils/hooks/useFetch'
+import { Suspense } from 'react'
+import CategoryList from './categoryList'
 import NavigationSkeleton from './navigationSkeleton'
 
 export default function Navigation() {
-  const { responseData: categoryNavLinks, loading } = useFetch<
-    NavigationLink[]
-  >({
-    method: 'get',
-    url: 'categories/list'
-  })
-
-  if (loading) {
-    return <NavigationSkeleton />
-  }
-
   return (
-    <nav className='bg-secondary col-span-12 md:col-span-1 h-screen p-3'>
-      <ul className='flex flex-col items-center md:items-start h-16 md:h-full overflow-y-auto'>
-        {categoryNavLinks &&
-          categoryNavLinks.map((category: NavigationLink, key) => (
-            <li key={key}>
-              <Link href={`/categories/${category.slug}`}>{category.name}</Link>
-            </li>
-          ))}
+    <nav className='h-auto md:h-content w-screen md:w-72 bg-secondary text-primary p-3'>
+      <ul className='flex flex-col w-50 items-center md:items-start h-20 md:h-full overflow-y-auto bg-primary text-secondary p-2'>
+        <CategoryList />
       </ul>
     </nav>
   )
