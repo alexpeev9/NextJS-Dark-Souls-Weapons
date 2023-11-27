@@ -12,12 +12,14 @@ export default async function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className='grid'>
+      <body className='flex flex-col bg-primary'>
         <ErrorProvider>
           <Header />
           <Navigation />
           <ErrorPopup />
-          {children}
+          <main className='bg-primary border-t-8 border-secondary py-2 px-4 md:px-8 mt-0 md:mt-28 ml-0 md:ml-72'>
+            {children}
+          </main>
         </ErrorProvider>
       </body>
     </html>

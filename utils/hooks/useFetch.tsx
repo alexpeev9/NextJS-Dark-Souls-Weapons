@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 import axios, { AxiosRequestConfig } from 'axios'
 import { useErrorContext } from '../contexts/ErrorContext'
 
@@ -23,45 +23,33 @@ const useFetch = <T,>({
   const [loading, setLoading] = useState<boolean>(false)
   const { setError: setGlobalError } = useErrorContext()
   useEffect(() => {
-    const source = axios.CancelToken.source()
-
-    const isNotGetMethod = method !== 'get'
-    if (requestData || isNotGetMethod) {
-      return
-    }
-
-    setLoading(true)
-
-    const config: AxiosRequestConfig = {
-      method,
-      url: `/api/${url}`,
-      data: requestData,
-      withCredentials: true,
-      cancelToken: source.token
-    }
-
-    axios(config)
-      .then((res) => {
-        setResponseData(res.data)
-      })
-      .catch((error) => {
+    const fetchData = async () => {
+      const isNotGetMethod = method !== 'get'
+      if (requestData || isNotGetMethod) {
+        return
+      }
+      try {
+        const result = await axios({
+          method,
+          url: `/api/${url}`,
+          data: requestData,
+          withCredentials: true
+        })
+        setResponseData(result.data)
+      } catch (error: any) {
         var errorMessage = error.response && error.response.data.message
         setGlobalError(
           errorMessage || 'Something went wrong! Please try again later'
         )
-      })
-      .finally(() => {
+      } finally {
         if (isNotGetMethod) {
           setRequestData(null)
         }
         setLoading(false)
-      })
-
-    // Cleanup function
-    return () => {
-      source.cancel('Request canceled due to component unmount')
+      }
     }
-  }, [requestData, url, method, setGlobalError])
+    fetchData()
+  }, [requestData, url, method])
 
   return { setRequestData, responseData, loading }
 }

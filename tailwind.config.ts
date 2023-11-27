@@ -15,9 +15,9 @@ module.exports = {
       backgroundImage: {
         'artorias-logo': "url('/images/artorias-logo.svg')"
       },
-      height: {
-        content: 'calc(100vh - 7rem)',
-        contentHalf: 'calc((100vh - 7rem) / 2)'
+      spacing: {
+        height: 'calc(100vh - 7rem)', // h-28
+        width: 'calc(100vw - 18rem)' // w-72
       }
     }
   },

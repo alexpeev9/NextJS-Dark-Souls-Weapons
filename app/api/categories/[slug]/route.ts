@@ -21,7 +21,8 @@ export async function GET(
         json_agg(
           jsonb_build_object(
             'name', weapons.name,
-            'slug', LOWER(REPLACE(weapons.name, ' ', '-'))
+            'slug', LOWER(REPLACE(weapons.name, ' ', '-')),
+            'imageurl', CONCAT(LOWER(REPLACE(weapons.name, ' ', '_')), '.png')
           )
         ) as weapons
       FROM
@@ -43,7 +44,7 @@ export async function GET(
       return nextResponse(NOT_FOUND, { message: 'Category not found' })
     }
 
-    return nextResponse(OK, data.rows)
+    return nextResponse(OK, data.rows[0])
   } catch (error: any) {
     return nextResponse(SERVER_ERROR, { message: error.message })
   }

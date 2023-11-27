@@ -12,11 +12,8 @@ export default function ListItem({
   activeClass
 }: ListItemData) {
   return (
-    <li
-      key={iterator + 'a'}
-      className={`p-0 md:p-1.5 hover:underline` + activeClass}
-    >
-      <Link href={`/weapons/${category.slug}`}>{category.name}</Link>
+    <li key={iterator} className={`p-0 md:p-1.5 hover:underline` + activeClass}>
+      <Link href={`/categories/${category.slug}`}>{category.name}</Link>
     </li>
   )
 }

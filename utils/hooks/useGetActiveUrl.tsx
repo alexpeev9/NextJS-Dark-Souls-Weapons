@@ -6,5 +6,5 @@ export default function UseGetActiveUrl(position: number, classToSet: string) {
   const setActiveClass = (slug: string) =>
     pathVariable == slug ? ` ${classToSet}` : ''
 
-  return { setActiveClass }
+  return { setActiveClass, pathVariable }
 }
