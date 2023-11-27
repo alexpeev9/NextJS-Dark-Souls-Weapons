@@ -22,7 +22,7 @@ export async function GET(
           jsonb_build_object(
             'name', weapons.name,
             'slug', LOWER(REPLACE(weapons.name, ' ', '-')),
-            'imageurl', CONCAT(LOWER(REPLACE(weapons.name, ' ', '_')), '.png')
+            'imageurl', REPLACE(CONCAT(LOWER(REPLACE(weapons.name, ' ', '_')), '.png'), '''', '')
           )
         ) as weapons
       FROM
