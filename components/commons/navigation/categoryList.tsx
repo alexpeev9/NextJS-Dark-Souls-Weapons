@@ -18,13 +18,11 @@ export default function CategoryList() {
 
   return categoryNavLinks ? (
     categoryNavLinks.map((category: NavigationLink, key) => (
-      <>
-        <ListItem
-          iterator={key}
-          category={category}
-          activeClass={setActiveClass(category.slug)}
-        />
-      </>
+      <ListItem
+        key={key}
+        category={category}
+        activeClass={setActiveClass(category.slug)}
+      />
     ))
   ) : (
     <NavigationSkeleton />

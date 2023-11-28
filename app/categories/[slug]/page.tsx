@@ -28,9 +28,9 @@ export default function Page({ params }: { params: { slug: string } }) {
         <p className='indent-3 md:indent-10'>{categoryData.description}</p>
         <section className='grid auto-rows-max grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 py-6'>
           {categoryData.weapons &&
-            categoryData.weapons.map((weapon: any) => (
+            categoryData.weapons.map((weapon: any, key: number) => (
               <Link
-                key={weapon.slug}
+                key={key}
                 href={`/weapons/${weapon.slug}`}
                 className='flex flex-col items-center justify-start px-3 py-4'
               >

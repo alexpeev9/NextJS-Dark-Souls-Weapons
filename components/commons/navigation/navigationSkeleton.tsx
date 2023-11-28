@@ -11,10 +11,10 @@ export default function NavigationSkeleton() {
     slug: ''
   })
 
-  return mockData.map((m, i) => (
+  return mockData.map((mock, key) => (
     <ListItem
-      iterator={i}
-      category={{ name: m.name, slug: m.slug }}
+      key={key}
+      category={{ name: mock.name, slug: mock.slug }}
       activeClass={''}
     />
   ))

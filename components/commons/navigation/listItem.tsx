@@ -2,17 +2,12 @@ import NavigationLink from '@/utils/types/NavigationLink'
 import Link from 'next/link'
 
 type ListItemData = {
-  iterator: number
   category: NavigationLink
   activeClass: string
 }
-export default function ListItem({
-  iterator,
-  category,
-  activeClass
-}: ListItemData) {
+export default function ListItem({ category, activeClass }: ListItemData) {
   return (
-    <li key={iterator} className={`p-0 md:p-1.5 hover:underline` + activeClass}>
+    <li className={`p-0 md:p-1.5 hover:underline` + activeClass}>
       <Link href={`/categories/${category.slug}`}>{category.name}</Link>
     </li>
   )
