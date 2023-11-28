@@ -14,11 +14,11 @@ export default function Home() {
           href='https://github.com/alexpeev9/NextJS-Dark-Souls-Weapons'
           rel='noopener noreferrer'
           target='_blank'
-          className='underline'
+          className='font-black'
         >
-          GitHub
+          GitHub Repository
         </Link>{' '}
-        repository and unravel the mysteries behind this project.
+        and unravel the mysteries behind this project.
       </p>
       <i className='bg-artorias-logo bg-black bg-no-repeat bg-center rounded-full border-text border-8 w-48 h-48 mr-0 md:mr-5' />
     </section>
