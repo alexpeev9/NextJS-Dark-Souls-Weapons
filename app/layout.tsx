@@ -17,7 +17,7 @@ export default async function RootLayout({
           <Header />
           <Navigation />
           <ErrorPopup />
-          <main className='bg-primary border-t-8 border-secondary py-2 px-4 md:px-8 mt-0 md:mt-28 ml-0 md:ml-72'>
+          <main className='border-t-8 border-secondary py-2 px-4 md:px-8 mt-0 md:mt-28 ml-0 md:ml-72'>
             {children}
           </main>
         </ErrorProvider>

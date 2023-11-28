@@ -20,7 +20,7 @@ const useFetch = <T,>({
 }): UseFetchResult<T> => {
   const [requestData, setRequestData] = useState<T | null>(null)
   const [responseData, setResponseData] = useState<T | null>(null)
-  const [loading, setLoading] = useState<boolean>(false)
+  const [loading, setLoading] = useState<boolean>(true)
   const { setError: setGlobalError } = useErrorContext()
   useEffect(() => {
     const fetchData = async () => {
@@ -29,6 +29,7 @@ const useFetch = <T,>({
         return
       }
       try {
+        setLoading(true)
         const result = await axios({
           method,
           url: `/api/${url}`,
