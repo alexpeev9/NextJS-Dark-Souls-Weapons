@@ -14,8 +14,9 @@ export async function GET(
     const data = await sql<Weapon>`
       SELECT
         weapons.name,
-        LOWER(REPLACE(weapons.name, ' ', '-')) as slug,
+        weapons.slug,
         weapons.weight,
+        weapons.image,
         weapons.durability,
         weapons.attackType,
         weapons.requirements,
@@ -23,16 +24,18 @@ export async function GET(
         weapons.bonus,
         jsonb_build_object(
           'name', categories.name,
-          'slug', LOWER(REPLACE(categories.name, ' ', '-'))
+          'slug', categories.slug
         ) as category
         FROM
         weapons
       LEFT JOIN
         categories ON categories.id = weapons.category
       WHERE
-        LOWER(REPLACE(weapons.name, ' ', '-')) = ${slug}
+        weapons.slug = ${slug}
       GROUP BY
         weapons.name,
+        weapons.slug,
+        weapons.image,
         weapons.weight,
         weapons.durability,
         weapons.attackType,

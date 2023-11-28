@@ -16,7 +16,7 @@ export default function Page({ params }: { params: { slug: string } }) {
       <>
         <section className='flex flex-col md:flex-row items-center justify-center pt-2 md:pt-0 pb-4'>
           <Image
-            src={`/images/weapons/${categoryData.imageurl}`}
+            src={`/images/weapons/${categoryData.image}`}
             alt={categoryData.slug}
             width={80}
             height={90}
@@ -35,7 +35,7 @@ export default function Page({ params }: { params: { slug: string } }) {
                 className='flex flex-col items-center justify-start px-3 py-4'
               >
                 <Image
-                  src={`/images/weapons/${weapon.imageurl}`}
+                  src={`/images/weapons/${weapon.image}`}
                   alt={weapon.name}
                   width={80}
                   height={90}

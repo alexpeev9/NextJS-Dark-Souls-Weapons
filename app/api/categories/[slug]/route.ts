@@ -14,15 +14,15 @@ export async function GET(
     const data = await sql<Category>`
       SELECT
         categories.name,
-        LOWER(REPLACE(categories.name, ' ', '-')) as slug,
+        categories.slug,
         categories.description,
-        categories.imageUrl,
+        categories.image,
         categories.weapons,
         json_agg(
           jsonb_build_object(
             'name', weapons.name,
-            'slug', LOWER(REPLACE(weapons.name, ' ', '-')),
-            'imageurl', REPLACE(CONCAT(LOWER(REPLACE(weapons.name, ' ', '_')), '.png'), '''', '')
+            'slug', weapons.slug,
+            'image', weapons.image
           )
         ) as weapons
       FROM
@@ -30,11 +30,12 @@ export async function GET(
       LEFT JOIN
         weapons ON weapons.id = ANY(categories.weapons)
       WHERE
-        LOWER(REPLACE(categories.name, ' ', '-')) = ${slug}
+        categories.slug = ${slug}
       GROUP BY
         categories.name,
+        categories.slug,
         categories.description,
-        categories.imageUrl,
+        categories.image,
         categories.weapons
       ORDER BY
         categories.name ASC

@@ -14,7 +14,7 @@ type BonusType = 'S' | 'A' | 'B' | 'C' | 'D' | 'E' | null
 export default interface Weapon extends Base {
   category: string
   attackType: attackType
-  imageUrl: string
+  image: string
   durability: number
   weight: number
   requirements: Requirements

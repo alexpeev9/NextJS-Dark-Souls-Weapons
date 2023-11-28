@@ -8,7 +8,7 @@ export async function GET() {
     const data = await sql<Category>`
       SELECT
         categories.name,
-        LOWER(REPLACE(categories.name, ' ', '-')) as slug
+        categories.slug
       FROM
         categories
       ORDER BY

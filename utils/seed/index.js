@@ -9,8 +9,9 @@ async function createTables(client) {
         id VARCHAR(32) PRIMARY KEY,
         name VARCHAR(255),
         description TEXT,
-        imageUrl VARCHAR(255),
-        weapons UUID[]
+        image VARCHAR(255),
+        weapons UUID[],
+        slug VARCHAR(255)
       );
     `)
 
@@ -25,7 +26,9 @@ async function createTables(client) {
         requirements JSONB,
         damage JSONB,
         bonus JSONB,
-        category VARCHAR(32) REFERENCES categories(id)
+        category VARCHAR(32) REFERENCES categories(id),
+        slug VARCHAR(255),
+        image VARCHAR(255)
       );
     `)
 
@@ -56,10 +59,10 @@ async function seed() {
   try {
     // Configuration for seeding categories table
     const categoriesData = {
-      path: './seed/categoriesData.json',
+      path: './utils/seed/categoriesData.json',
       query: `
-      INSERT INTO categories (id, name, description, imageUrl, weapons)
-      VALUES ($1, $2, $3, $4, $5)
+      INSERT INTO categories (id, name, description, image, weapons, slug)
+      VALUES ($1, $2, $3, $4, $5, $6)
       ON CONFLICT (id) DO NOTHING
       RETURNING *;`,
       dataConverter: function (data) {
@@ -67,8 +70,9 @@ async function seed() {
           data.id,
           data.name,
           data.description,
-          data.imageUrl,
-          data.weapons
+          data.image,
+          data.weapons,
+          data.slug
         ]
         return convertedData
       }
@@ -76,9 +80,9 @@ async function seed() {
 
     // Configuration for seeding weapons table
     const weaponsData = {
-      path: './seed/weaponsData.json',
-      query: `INSERT INTO weapons (id, requirements, category, weight, damage, durability, name, attackType, bonus)
-      VALUES ($1, $2::jsonb, $3, $4, $5::jsonb, $6, $7, $8, $9::jsonb)
+      path: './utils/seed/weaponsData.json',
+      query: `INSERT INTO weapons (id, requirements, category, weight, damage, durability, name, attackType, bonus, slug, image)
+      VALUES ($1, $2::jsonb, $3, $4, $5::jsonb, $6, $7, $8, $9::jsonb, $10, $11)
       ON CONFLICT (id) DO NOTHING
       RETURNING *;`,
       dataConverter: function (data) {
@@ -91,7 +95,9 @@ async function seed() {
           data.durability,
           data.name,
           data.attackType,
-          data.bonus
+          data.bonus,
+          data.slug,
+          data.image
         ]
         return convertedData
       }
