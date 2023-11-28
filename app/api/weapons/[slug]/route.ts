@@ -42,7 +42,8 @@ export async function GET(
         weapons.requirements,
         weapons.damage,
         weapons.bonus,
-        categories.name
+        categories.name,
+        categories.slug
       ORDER BY
         weapons.name ASC
       LIMIT 1`
@@ -51,7 +52,7 @@ export async function GET(
       return nextResponse(NOT_FOUND, { message: 'Weapon not found' })
     }
 
-    return nextResponse(OK, data.rows)
+    return nextResponse(OK, data.rows[0])
   } catch (error: any) {
     return nextResponse(SERVER_ERROR, { message: error.message })
   }
