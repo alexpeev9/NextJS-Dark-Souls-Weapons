@@ -1,7 +1,8 @@
-# ⚔️ NextJS Dark Souls Weapons
-> Next.js 14-powered application with PostgreSQL backend, offering users a dynamic interface to explore weapon categories and details, styled with Tailwind CSS.
+# ⚔️ NextJS Dark Souls Weapons ⚔️
+> ⚠️ Check out the live version on: [dark-souls-weapons-project.vercel.app](https://dark-souls-weapons-project.vercel.app/)
 
-## 🗡️ Technology Stack:
+## 🗡️ Description:
+Simple web application built with NextJS.
 * Frontend
   * **Framework**: Next.js 14
   * **Styling**: Tailwind CSS
