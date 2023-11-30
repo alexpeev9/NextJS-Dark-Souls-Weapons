@@ -20,7 +20,7 @@ export default function Home() {
         </Link>{' '}
         and unravel the mysteries behind this project.
       </p>
-      <i className='bg-artorias-logo bg-black bg-no-repeat bg-center rounded-full border-text border-8 w-48 h-48 mr-0 md:mr-5' />
+      <i className='bg-artorias bg-black bg-no-repeat bg-center rounded-full border-text border-8 w-48 h-48 mr-0 md:mr-5' />
     </section>
   )
 }
