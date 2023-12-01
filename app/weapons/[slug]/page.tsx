@@ -6,6 +6,7 @@ import Link from 'next/link'
 import DataFetchState from '@/utils/types/commons/DataFetchState'
 import { useErrorContext } from '@/utils/contexts/ErrorContext'
 import { notFound } from 'next/navigation'
+import Loader from '@/components/commons/loader'
 
 export default function Page({ params }: { params: { slug: string } }) {
   const slug = params.slug
@@ -18,7 +19,7 @@ export default function Page({ params }: { params: { slug: string } }) {
   const { setError: setGlobalError } = useErrorContext()
 
   if (loading) {
-    return <p>Loading...</p>
+    return <Loader />
   }
 
   if (error) {

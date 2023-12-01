@@ -7,6 +7,7 @@ import { notFound } from 'next/navigation'
 import Category from '@/utils/types/Category'
 import { useErrorContext } from '@/utils/contexts/ErrorContext'
 import DataFetchState from '@/utils/types/commons/DataFetchState'
+import Loader from '@/components/commons/loader'
 
 export default function CategoryPage({ slug }: { slug: string }) {
   const {
@@ -17,7 +18,7 @@ export default function CategoryPage({ slug }: { slug: string }) {
   const { setError: setGlobalError } = useErrorContext()
 
   if (loading) {
-    return <p>Loading...</p>
+    return <Loader />
   }
 
   if (error) {
