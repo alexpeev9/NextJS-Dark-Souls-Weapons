@@ -1,6 +1,6 @@
-import Base from './Base'
+import Base from '../commons/Base'
 
-type attackType =
+export type attackType =
   | 'regular'
   | 'regular / thrust'
   | 'slash'
@@ -9,7 +9,7 @@ type attackType =
   | 'thrust / slash'
   | 'none'
 
-type BonusType = 'S' | 'A' | 'B' | 'C' | 'D' | 'E' | null
+export type BonusType = 'S' | 'A' | 'B' | 'C' | 'D' | 'E' | null
 
 export default interface Weapon extends Base {
   category: string

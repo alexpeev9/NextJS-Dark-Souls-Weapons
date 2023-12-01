@@ -1,57 +1,82 @@
-import { useEffect, useState } from 'react'
-import axios, { AxiosRequestConfig } from 'axios'
-import { useErrorContext } from '../contexts/ErrorContext'
+import axios from 'axios'
+import { useReducer, useEffect, Reducer } from 'react'
+import DataFetchState from '../types/commons/DataFetchState'
 
-type MethodTypes = 'get' | 'post' | 'put' | 'patch' | 'delete'
+// Define action types
+const FETCH_INIT = 'FETCH_INIT'
+const FETCH_SUCCESS = 'FETCH_SUCCESS'
+const FETCH_FAILURE = 'FETCH_FAILURE'
 
-// Define a generic type for the useFetch result
-type UseFetchResult<T> = {
-  setRequestData: React.Dispatch<React.SetStateAction<T | null>>
-  responseData: T | null
-  loading: boolean
+// Define the action types
+type FetchInitAction = { type: typeof FETCH_INIT }
+type FetchSuccessAction<T> = { type: typeof FETCH_SUCCESS; payload: T }
+type FetchFailureAction = { type: typeof FETCH_FAILURE; payload: string }
+
+type DataFetchAction<T> =
+  | FetchInitAction
+  | FetchSuccessAction<T>
+  | FetchFailureAction
+
+// Reducer function to handle state transitions
+const dataFetchReducer = <T,>(
+  state: DataFetchState<T>,
+  action: DataFetchAction<T>
+): DataFetchState<T> => {
+  switch (action.type) {
+    case FETCH_INIT:
+      return { ...state, loading: true, error: null }
+    case FETCH_SUCCESS:
+      return { ...state, loading: false, data: action.payload }
+    case FETCH_FAILURE:
+      return { ...state, loading: false, error: action.payload }
+    default:
+      throw new Error('Unhandled action type')
+  }
 }
 
-const useFetch = <T,>({
-  method,
-  url
-}: {
-  method: MethodTypes
-  url: string
-}): UseFetchResult<T> => {
-  const [requestData, setRequestData] = useState<T | null>(null)
-  const [responseData, setResponseData] = useState<T | null>(null)
-  const [loading, setLoading] = useState<boolean>(false)
-  const { setError: setGlobalError } = useErrorContext()
+// Custom hook that encapsulates data fetching logic
+const useFetch = <T,>(url: string) => {
+  const [state, dispatch] = useReducer(
+    dataFetchReducer as Reducer<DataFetchState<T>, DataFetchAction<T>>,
+    {
+      data: null,
+      loading: false,
+      error: null
+    } as DataFetchState<T>
+  )
+
   useEffect(() => {
+    let isCanceled = false
+
     const fetchData = async () => {
-      const isNotGetMethod = method !== 'get'
-      if (requestData || isNotGetMethod) {
-        return
-      }
+      dispatch({ type: FETCH_INIT })
+
       try {
         const result = await axios({
-          method,
+          method: 'get',
           url: `/api/${url}`,
-          data: requestData,
           withCredentials: true
         })
-        setResponseData(result.data)
-      } catch (error: any) {
-        var errorMessage = error.response && error.response.data.message
-        setGlobalError(
-          errorMessage || 'Something went wrong! Please try again later'
-        )
-      } finally {
-        if (isNotGetMethod) {
-          setRequestData(null)
+        const data: T = result.data
+
+        if (!isCanceled) {
+          dispatch({ type: FETCH_SUCCESS, payload: data })
         }
-        setLoading(false)
+      } catch (error: any) {
+        if (!isCanceled) {
+          dispatch({ type: FETCH_FAILURE, payload: error.message })
+        }
       }
     }
-    fetchData()
-  }, [requestData, url, method])
 
-  return { setRequestData, responseData, loading }
+    fetchData()
+
+    return () => {
+      isCanceled = true
+    }
+  }, [url])
+
+  return state
 }
 
 export default useFetch

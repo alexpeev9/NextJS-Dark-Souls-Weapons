@@ -1,3 +1,5 @@
+import Loader from '@/components/commons/loader'
+
 export default function Loading() {
-  return <div className='w-screen h-screen bg-primary'></div>
+  return <Loader />
 }

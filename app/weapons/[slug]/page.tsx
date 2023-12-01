@@ -1,53 +1,61 @@
 'use client'
 
-import Image from 'next/image'
 import useFetch from '@/utils/hooks/useFetch'
 import Link from 'next/link'
+import DataFetchState from '@/utils/types/commons/DataFetchState'
+import { useErrorContext } from '@/utils/contexts/ErrorContext'
+import { notFound } from 'next/navigation'
+import Loader from '@/components/commons/loader'
+import Hero from '@/components/commons/hero'
+import WeaponVM from '@/utils/types/viewModels/WeaponVM'
 
 export default function Page({ params }: { params: { slug: string } }) {
   const slug = params.slug
-  const { responseData: weaponData } = useFetch<any>({
-    method: 'get',
-    url: `weapons/${slug}`
-  })
-  if (weaponData) {
-    console.log(weaponData)
+
+  const {
+    data: weapon,
+    error,
+    loading
+  }: DataFetchState<WeaponVM> = useFetch<WeaponVM>(`/weapons/${slug}`)
+  const { setError: setGlobalError } = useErrorContext()
+
+  if (loading) {
+    return <Loader />
   }
+
+  if (error) {
+    var errorMessage = error
+    setGlobalError(
+      errorMessage || 'Something went wrong! Please try again later'
+    )
+    return notFound()
+  }
+
   return (
-    weaponData && (
+    weapon && (
       <>
-        <section className='flex flex-col md:flex-row items-center justify-center pt-2 md:pt-0 pb-4'>
-          <Image
-            src={`/images/weapons/${weaponData.image}`}
-            alt={weaponData.slug}
-            width={80}
-            height={90}
-          />
-          <h2 className='text-3xl underline text-center ml-0 md:ml-4 pt-2 md:pt-0'>
-            {weaponData.name}
-          </h2>
-        </section>
+        <Hero name={weapon.name} image={weapon.image} slug={weapon.slug} />
         <div className='flex flex-col justify-center items-center'>
           <h3 className='font-black'>Description</h3>
           <ul className='list-disc mb-3'>
             <li className='ml-10'>
-              <span className='font-black'>Weight</span>: {weaponData.weight}
+              <span className='font-black'>Weight</span>: {weapon.weight}
             </li>
             <li className='ml-10'>
               <span className='font-black'>Durability</span>:{' '}
-              {weaponData.durability}
+              {weapon.durability}
             </li>
             <li className='ml-10'>
               <span className='font-black'>Attack Type</span>:{' '}
-              {weaponData.attacktype}
+              {weapon.attacktype}
             </li>
             <li className='ml-10'>
               <span className='font-black'>Caetgory</span>:{' '}
               <Link
-                href={`/categories/${weaponData.category.slug}`}
+                href={`/categories/${weapon.category.slug}`}
                 className='underline'
               >
-                {weaponData.category.name}
+                {weapon.category.name}
               </Link>
             </li>
           </ul>
@@ -64,25 +72,25 @@ export default function Page({ params }: { params: { slug: string } }) {
                 <tr>
                   <td className='border-2 p-1'>Strength</td>
                   <td className='border-2 p-1 pl-3'>
-                    {weaponData.requirements.strength}
+                    {weapon.requirements.strength}
                   </td>
                 </tr>
                 <tr>
                   <td className='border-2 p-1'>Dexterity</td>
                   <td className='border-2 p-1 pl-3'>
-                    {weaponData.requirements.dexterity}
+                    {weapon.requirements.dexterity}
                   </td>
                 </tr>
                 <tr>
                   <td className='border-2 p-1'>Faith</td>
                   <td className='border-2 p-1 pl-3'>
-                    {weaponData.requirements.faith}
+                    {weapon.requirements.faith}
                   </td>
                 </tr>
                 <tr>
                   <td className='border-2 p-1'>Intelligence</td>
                   <td className='border-2 p-1 pl-3'>
-                    {weaponData.requirements.intelligence}
+                    {weapon.requirements.intelligence}
                   </td>
                 </tr>
               </tbody>
