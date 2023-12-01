@@ -44,7 +44,10 @@ const useFetch = <T,>(url: string) => {
       error: null
     } as DataFetchState<T>
   )
+
   useEffect(() => {
+    let isCanceled = false
+
     const fetchData = async () => {
       dispatch({ type: FETCH_INIT })
 
@@ -55,13 +58,23 @@ const useFetch = <T,>(url: string) => {
           withCredentials: true
         })
         const data: T = result.data
-        dispatch({ type: FETCH_SUCCESS, payload: data })
+
+        if (!isCanceled) {
+          console.log('hhi')
+          dispatch({ type: FETCH_SUCCESS, payload: data })
+        }
       } catch (error: any) {
-        dispatch({ type: FETCH_FAILURE, payload: error.message })
+        if (!isCanceled) {
+          dispatch({ type: FETCH_FAILURE, payload: error.message })
+        }
       }
     }
 
     fetchData()
+
+    return () => {
+      isCanceled = true
+    }
   }, [url])
 
   return state
