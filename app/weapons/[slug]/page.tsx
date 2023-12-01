@@ -7,6 +7,7 @@ import { useErrorContext } from '@/utils/contexts/ErrorContext'
 import { notFound } from 'next/navigation'
 import Loader from '@/components/commons/loader'
 import Hero from '@/components/commons/hero'
+import WeaponVM from '@/utils/types/viewModels/WeaponVM'
 
 export default function Page({ params }: { params: { slug: string } }) {
   const slug = params.slug
@@ -15,7 +16,7 @@ export default function Page({ params }: { params: { slug: string } }) {
     data: weapon,
     error,
     loading
-  }: DataFetchState<any> = useFetch<any>(`/weapons/${slug}`)
+  }: DataFetchState<WeaponVM> = useFetch<WeaponVM>(`/weapons/${slug}`)
   const { setError: setGlobalError } = useErrorContext()
 
   if (loading) {

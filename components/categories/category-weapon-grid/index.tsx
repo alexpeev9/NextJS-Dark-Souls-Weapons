@@ -14,7 +14,7 @@ export default function CategoryWeaponGrid({ weapons }: WeaponTilesVMArray) {
           <Link
             key={key}
             href={`/weapons/${weapon.slug}`}
-            className='flex flex-col items-center justify-start px-3 py-4'
+            className='flex flex-col items-center justify-start hover:underline px-3 py-4'
           >
             <ImageElement
               path={weapon.image}

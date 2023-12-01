@@ -1,6 +1,14 @@
 import { NextResponse } from 'next/server'
+import Weapon from './types/entities/Weapon'
+import Category from './types/entities/Category'
 
-export const nextResponse = (status: number, data: any) => {
+interface ErrorMessage {
+  message: string
+}
+
+type ResponseData = Weapon | Category | Category[] | ErrorMessage
+
+export const nextResponse = (status: number, data: ResponseData) => {
   return NextResponse.json(data, {
     status
   })
