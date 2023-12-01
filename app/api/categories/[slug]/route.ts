@@ -1,7 +1,7 @@
 import { NextRequest } from 'next/server'
 import { sql } from '@vercel/postgres'
 
-import Category from '@/utils/types/Category'
+import Category from '@/utils/types/entities/Category'
 import { nextResponse, NOT_FOUND, OK, SERVER_ERROR } from '@/utils/apiHelper'
 
 export async function GET(

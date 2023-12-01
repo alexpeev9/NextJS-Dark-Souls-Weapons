@@ -1,5 +1,5 @@
-import Base from './Base'
-import NavigationLink from './NavigationLink'
+import Base from '../commons/Base'
+import NavigationLink from '../NavigationLink'
 
 export default interface Category extends Base {
   description: string

@@ -1,7 +1,7 @@
 import { NextRequest } from 'next/server'
 import { sql } from '@vercel/postgres'
 
-import Weapon from '@/utils/types/Weapon'
+import Weapon from '@/utils/types/entities/Weapon'
 import { NOT_FOUND, OK, SERVER_ERROR, nextResponse } from '@/utils/apiHelper'
 
 export async function GET(

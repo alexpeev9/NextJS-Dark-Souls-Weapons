@@ -1,12 +1,12 @@
 'use client'
 
-import Image from 'next/image'
 import useFetch from '@/utils/hooks/useFetch'
 import Link from 'next/link'
 import DataFetchState from '@/utils/types/commons/DataFetchState'
 import { useErrorContext } from '@/utils/contexts/ErrorContext'
 import { notFound } from 'next/navigation'
 import Loader from '@/components/commons/loader'
+import Hero from '@/components/commons/hero'
 
 export default function Page({ params }: { params: { slug: string } }) {
   const slug = params.slug
@@ -33,17 +33,7 @@ export default function Page({ params }: { params: { slug: string } }) {
   return (
     weapon && (
       <>
-        <section className='flex flex-col md:flex-row items-center justify-center pt-2 md:pt-0 pb-4'>
-          <Image
-            src={`/images/weapons/${weapon.image}`}
-            alt={weapon.slug}
-            width={80}
-            height={90}
-          />
-          <h2 className='text-3xl underline text-center ml-0 md:ml-4 pt-2 md:pt-0'>
-            {weapon.name}
-          </h2>
-        </section>
+        <Hero name={weapon.name} image={weapon.image} slug={weapon.slug} />
         <div className='flex flex-col justify-center items-center'>
           <h3 className='font-black'>Description</h3>
           <ul className='list-disc mb-3'>
