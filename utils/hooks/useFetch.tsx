@@ -60,7 +60,6 @@ const useFetch = <T,>(url: string) => {
         const data: T = result.data
 
         if (!isCanceled) {
-          console.log('hhi')
           dispatch({ type: FETCH_SUCCESS, payload: data })
         }
       } catch (error: any) {
