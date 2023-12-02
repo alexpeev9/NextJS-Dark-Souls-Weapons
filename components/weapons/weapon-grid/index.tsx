@@ -6,7 +6,7 @@ interface WeaponTilesVMArray {
   weapons: WeaponTileVM[]
 }
 
-export default function CategoryWeaponGrid({ weapons }: WeaponTilesVMArray) {
+export default function WeaponGrid({ weapons }: WeaponTilesVMArray) {
   return (
     weapons && (
       <section className='grid auto-rows-max grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 py-6'>
