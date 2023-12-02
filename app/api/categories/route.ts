@@ -8,7 +8,8 @@ export async function GET() {
     const data = await sql<Category>`
       SELECT
         categories.name,
-        categories.slug
+        categories.slug,
+        categories.image
       FROM
         categories
       ORDER BY

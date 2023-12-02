@@ -1,14 +1,21 @@
 import { NextResponse } from 'next/server'
 import Weapon from './types/entities/Weapon'
 import Category from './types/entities/Category'
+import WeaponTileVM from './types/viewModels/WeaponTileVM'
 
 interface ErrorMessage {
   message: string
 }
 
-type ResponseData = Weapon | Category | Category[] | ErrorMessage
+type AllowedResponseType =
+  | Weapon
+  | WeaponTileVM[]
+  | Category
+  | Category[]
+  | Number
+  | ErrorMessage
 
-export const nextResponse = (status: number, data: ResponseData) => {
+export const nextResponse = (status: number, data: AllowedResponseType) => {
   return NextResponse.json(data, {
     status
   })

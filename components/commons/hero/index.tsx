@@ -8,7 +8,7 @@ interface HeroData {
 export default function Hero({ name, image, slug }: HeroData) {
   return (
     <>
-      <section className='flex flex-col md:flex-row items-center justify-center pt-2 md:pt-0 pb-4'>
+      <section className='flex flex-col md:flex-row items-center justify-center py-2 md:py-5'>
         <ImageElement
           path={image}
           alt={slug}
