@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server'
 import Weapon from './types/entities/Weapon'
 import Category from './types/entities/Category'
 import WeaponTileVM from './types/viewModels/WeaponTileVM'
+import WeaponsLengthVM from './types/viewModels/WeaponsLengthVM'
 
 interface ErrorMessage {
   message: string
@@ -12,7 +13,7 @@ type AllowedResponseType =
   | WeaponTileVM[]
   | Category
   | Category[]
-  | Number
+  | WeaponsLengthVM
   | ErrorMessage
 
 export const nextResponse = (status: number, data: AllowedResponseType) => {

@@ -8,13 +8,30 @@ import Loader from '@/components/commons/loader'
 import WeaponGrid from '@/components/weapons/weapon-grid'
 import WeaponTileVM from '@/utils/types/viewModels/WeaponTileVM'
 import Hero from '@/components/commons/hero'
+import WeaponsLengthVM from '@/utils/types/viewModels/WeaponsLengthVM'
+import Link from 'next/link'
 
-export default function Page() {
+interface pageData {
+  pages: any[]
+}
+export default function Page({
+  searchParams
+}: {
+  searchParams?: {
+    page?: string
+  }
+}) {
+  const currentPage = Number(searchParams?.page) || 1
+  const { data: weaponsPages }: DataFetchState<pageData> =
+    useAxios<any>(`/weapons?count=true`)
+
   const {
     data: weapons,
     error,
     loading
-  }: DataFetchState<WeaponTileVM[]> = useAxios<WeaponTileVM[]>(`/weapons`)
+  }: DataFetchState<WeaponTileVM[]> = useAxios<WeaponTileVM[]>(
+    currentPage ? `/weapons?page=${currentPage}` : `/weapons`
+  )
   const { setError: setGlobalError } = useErrorContext()
 
   if (loading) {
@@ -37,6 +54,22 @@ export default function Page() {
           image={'pyromancy_flame.png'}
           slug={'/weapons'}
         />
+        <section className='flex justify-center my-3'>
+          <div className='bg-secondary text-primary rounded py-3'>
+            {weaponsPages &&
+              weaponsPages.pages.map((page, i) => (
+                <Link
+                  href={`/weapons?page=${page.value}`}
+                  key={i}
+                  className={`p-3 m-3 ${
+                    currentPage === page.value ? 'underline' : ''
+                  }`}
+                >
+                  {page.value}
+                </Link>
+              ))}
+          </div>
+        </section>
         <WeaponGrid weapons={weapons} />
       </>
     )
