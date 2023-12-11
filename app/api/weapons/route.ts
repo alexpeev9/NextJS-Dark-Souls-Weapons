@@ -3,7 +3,6 @@ import { sql } from '@vercel/postgres'
 import { nextResponse, NOT_FOUND, OK, SERVER_ERROR } from '@/utils/apiHelper'
 import WeaponTileVM from '@/utils/types/viewModels/WeaponTileVM'
 import { NextRequest } from 'next/server'
-import WeaponsLengthVM from '@/utils/types/viewModels/WeaponsLengthVM'
 
 const ITEMS_PER_PAGE = 10
 
@@ -46,7 +45,7 @@ export async function GET(request: NextRequest) {
       offset = ITEMS_PER_PAGE
     }
 
-    const data = await sql`
+    const data = await sql<WeaponTileVM>`
       SELECT
         weapons.name,
         weapons.slug,
