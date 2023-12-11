@@ -8,13 +8,27 @@ import Loader from '@/components/commons/loader'
 import WeaponGrid from '@/components/weapons/weapon-grid'
 import WeaponTileVM from '@/utils/types/viewModels/WeaponTileVM'
 import Hero from '@/components/commons/hero'
+import ListPagination from '@/components/weapons/list-pagination'
 
-export default function Page() {
+interface pageData {
+  pages: any[]
+}
+export default function Page({
+  searchParams
+}: {
+  searchParams?: {
+    page?: string
+  }
+}) {
+  const currentPage = Number(searchParams?.page) || 1
+
   const {
     data: weapons,
     error,
     loading
-  }: DataFetchState<WeaponTileVM[]> = useAxios<WeaponTileVM[]>(`/weapons`)
+  }: DataFetchState<WeaponTileVM[]> = useAxios<WeaponTileVM[]>(
+    currentPage ? `/weapons?page=${currentPage}` : `/weapons`
+  )
   const { setError: setGlobalError } = useErrorContext()
 
   if (loading) {
@@ -38,6 +52,7 @@ export default function Page() {
           slug={'/weapons'}
         />
         <WeaponGrid weapons={weapons} />
+        <ListPagination currentPage={currentPage || 1} />
       </>
     )
   )

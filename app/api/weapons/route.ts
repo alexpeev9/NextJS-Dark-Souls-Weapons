@@ -3,6 +3,7 @@ import { sql } from '@vercel/postgres'
 import { nextResponse, NOT_FOUND, OK, SERVER_ERROR } from '@/utils/apiHelper'
 import WeaponTileVM from '@/utils/types/viewModels/WeaponTileVM'
 import { NextRequest } from 'next/server'
+import WeaponsLengthVM from '@/utils/types/viewModels/WeaponsLengthVM'
 
 const ITEMS_PER_PAGE = 10
 
@@ -15,13 +16,22 @@ export async function GET(request: NextRequest) {
 
     // if 'count' is sent in the request, show count of records
     if (count && count === 'true') {
-      const data = await sql<Number>`
+      const data = await sql`
       SELECT 
         COUNT(*) 
       FROM 
         weapons`
 
-      return nextResponse(OK, data.rows[0])
+      const count = Math.round(Number(data.rows[0].count) / 10)
+      const pages = Array.from({ length: count }, (_, index) => ({
+        value: index + 1
+      }))
+
+      const dataResponse = {
+        count: count,
+        pages: pages
+      }
+      return nextResponse(OK, dataResponse)
     }
 
     // if 'page' is sent in the request, show specified page
@@ -36,7 +46,7 @@ export async function GET(request: NextRequest) {
       offset = ITEMS_PER_PAGE
     }
 
-    const data = await sql<WeaponTileVM>`
+    const data = await sql`
       SELECT
         weapons.name,
         weapons.slug,
@@ -45,7 +55,7 @@ export async function GET(request: NextRequest) {
         weapons
       ORDER BY
         weapons.name ASC
-      LIMIT 10 OFFSET ${offset}`
+      LIMIT ${ITEMS_PER_PAGE} OFFSET ${offset}`
 
     if (!data.rowCount) {
       return nextResponse(NOT_FOUND, { message: 'Weapons not found' })
