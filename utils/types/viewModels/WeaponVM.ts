@@ -9,5 +9,5 @@ export default interface WeaponVM extends Base {
   weight: number
   requirements: Requirements
   damage: Damage
-  Bonus: Bonus
+  bonus: Bonus
 }

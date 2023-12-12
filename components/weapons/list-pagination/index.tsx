@@ -9,7 +9,7 @@ export default function ListPagination({
   currentPage: number
 }) {
   const { data: weaponsPages }: DataFetchState<PagesVM> =
-    useAxios<PagesVM>(`/weapons/pages-count`)
+    useAxios<PagesVM>(`weapons/pages-count`)
 
   const buttonLinks =
     weaponsPages &&
