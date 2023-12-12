@@ -14,7 +14,9 @@ export default function Page() {
     data: categories,
     error,
     loading
-  }: DataFetchState<WeaponTileVM[]> = useAxios<WeaponTileVM[]>(`/categories`)
+  }: DataFetchState<WeaponTileVM[]> = useAxios<WeaponTileVM[]>(
+    `/categories/list`
+  )
   const { setError: setGlobalError } = useErrorContext()
 
   if (loading) {
@@ -35,7 +37,7 @@ export default function Page() {
         <Hero
           name={'Categories'}
           image={'dark_hand.png'}
-          slug={'/categories'}
+          slug={'/categories/list'}
         />
         <WeaponGrid weapons={categories} />
       </>

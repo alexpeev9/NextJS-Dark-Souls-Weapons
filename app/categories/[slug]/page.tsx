@@ -16,7 +16,7 @@ export default function Page({ params }: { params: { slug: string } }) {
     data: category,
     error,
     loading
-  }: DataFetchState<CategoryVM> = useAxios<CategoryVM>(`/categories/${slug}`)
+  }: DataFetchState<CategoryVM> = useAxios<CategoryVM>(`/categories/item/${slug}`)
   const { setError: setGlobalError } = useErrorContext()
 
   if (loading) {

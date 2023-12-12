@@ -1,8 +1,3 @@
-export default interface PagesVM {
+export default interface PageVM {
   count: number
-  pages: PageVM[]
-}
-
-export interface PageVM {
-  value: number
 }
