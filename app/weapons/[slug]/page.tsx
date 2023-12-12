@@ -16,7 +16,7 @@ export default function Page({ params }: { params: { slug: string } }) {
     data: weapon,
     error,
     loading
-  }: DataFetchState<WeaponVM> = useFetch<WeaponVM>(`/weapons/${slug}`)
+  }: DataFetchState<WeaponVM> = useFetch<WeaponVM>(`/weapons/item/${slug}`)
   const { setError: setGlobalError } = useErrorContext()
 
   if (loading) {

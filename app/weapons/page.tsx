@@ -27,7 +27,7 @@ export default function Page({
     error,
     loading
   }: DataFetchState<WeaponTileVM[]> = useAxios<WeaponTileVM[]>(
-    currentPage ? `/weapons?page=${currentPage}` : `/weapons`
+    currentPage ? `/weapons/list?page=${currentPage}` : `/weapons/list`
   )
   const { setError: setGlobalError } = useErrorContext()
 

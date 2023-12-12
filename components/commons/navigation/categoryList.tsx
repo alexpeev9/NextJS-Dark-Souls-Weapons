@@ -14,7 +14,7 @@ export default function CategoryList() {
     data: categories,
     error,
     loading
-  }: DataFetchState<any[]> = useFetch<any[]>(`/categories`)
+  }: DataFetchState<any[]> = useFetch<any[]>(`/categories/list`)
 
   if (loading || error) {
     return <NavigationSkeleton />

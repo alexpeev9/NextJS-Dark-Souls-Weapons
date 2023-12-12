@@ -9,7 +9,7 @@ export default function ListPagination({
   currentPage: number
 }) {
   const { data: weaponsPages }: DataFetchState<PagesVM> =
-    useAxios<PagesVM>(`/weapons?count=true`)
+    useAxios<PagesVM>(`/weapons/pages-count`)
 
   return (
     <section className='flex justify-center my-3'>
