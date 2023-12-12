@@ -1,7 +1,9 @@
 import { sql } from '@vercel/postgres'
 
-import { nextResponse, NOT_FOUND, OK, SERVER_ERROR } from '@/utils/apiHelper'
+import { nextResponse, OK, SERVER_ERROR } from '@/utils/apiHelper'
 import { NextRequest } from 'next/server'
+
+const ITEMS_PER_PAGE = 10
 
 export async function GET(request: NextRequest) {
   try {
@@ -11,14 +13,10 @@ export async function GET(request: NextRequest) {
       FROM 
         weapons`
 
-    const count = Math.round(Number(data.rows[0].count) / 10)
-    const pages = Array.from({ length: count }, (_, index) => ({
-      value: index + 1
-    }))
+    const count = Math.round(Number(data.rows[0].count) / ITEMS_PER_PAGE)
 
     const dataResponse = {
-      count: count,
-      pages: pages
+      count: count
     }
     return nextResponse(OK, dataResponse)
   } catch (error: any) {
