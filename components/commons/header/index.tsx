@@ -13,10 +13,10 @@ export default function Header() {
       <nav className='flex justify-around items-center text-2xl lg:text-3xl mr-0 md:mr-10 lg:mr-20'>
         <ul className='flex flex-row justify-around w-full py-3 md:py-0'>
           <li className='hover:underline mr-0 md:mr-10'>
-            <Link href='/weapons'>Weapons</Link>
+            <Link href='/categories'>Categories</Link>
           </li>
           <li className='hover:underline'>
-            <Link href='/categories'>Categories</Link>
+            <Link href='/about'>About</Link>
           </li>
         </ul>
       </nav>

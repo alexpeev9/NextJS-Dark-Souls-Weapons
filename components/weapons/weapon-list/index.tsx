@@ -10,18 +10,7 @@ import WeaponTileVM from '@/utils/types/viewModels/WeaponTileVM'
 import Hero from '@/components/commons/hero'
 import ListPagination from '@/components/weapons/list-pagination'
 
-interface pageData {
-  pages: any[]
-}
-export default function Page({
-  searchParams
-}: {
-  searchParams?: {
-    page?: string
-  }
-}) {
-  const currentPage = Number(searchParams?.page) || 1
-
+export default function WeaponList({ currentPage }: { currentPage?: number }) {
   const {
     data: weapons,
     error,

@@ -6,6 +6,17 @@ import Header from '@/components/commons/header'
 import Navigation from '@/components/commons/navigation'
 import ErrorPopup from '@/components/commons/header/error-popup'
 
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: {
+    template: '%s | DSW',
+    default: 'DS Weapons'
+  },
+  description:
+    'Web application built with NextJS featuring a PostgreSQL API and styled with Tailwind CSS.'
+}
+
 export default async function RootLayout({
   children
 }: {

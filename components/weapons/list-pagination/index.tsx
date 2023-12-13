@@ -17,7 +17,7 @@ export default function ListPagination({
       let page = i + 1
       return (
         <Link
-          href={`/weapons?page=${page}`}
+          href={`?page=${page}`}
           key={i}
           className={`p-3 m-3 text-center rounded ${
             currentPage === page ? 'bg-primary text-secondary underline' : ''
