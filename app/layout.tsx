@@ -11,10 +11,15 @@ import { Metadata } from 'next'
 export const metadata: Metadata = {
   title: {
     template: '%s | DSW',
-    default: 'DS Weapons'
+    default: 'Dark Souls Weapons'
   },
   description:
-    'Web application built with NextJS featuring a PostgreSQL API and styled with Tailwind CSS.'
+    'Web application built with NextJS featuring a PostgreSQL API and styled with Tailwind CSS.',
+  openGraph: {
+    images: {
+      url: '/images/artorias-logo.svg'
+    }
+  }
 }
 
 export default async function RootLayout({
