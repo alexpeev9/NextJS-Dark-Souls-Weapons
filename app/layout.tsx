@@ -1,12 +1,12 @@
-import './globals.css'
-import { ErrorProvider } from '@/utils/contexts/ErrorContext'
+import { Metadata } from 'next'
 
 import HtmlWrapper, { Main } from '@/components/commons/html-wrapper'
 import Header from '@/components/commons/header'
 import Navigation from '@/components/commons/navigation'
 import ErrorPopup from '@/components/commons/header/error-popup'
 
-import { Metadata } from 'next'
+import './globals.css'
+import { ErrorProvider } from '@/utils/contexts/ErrorContext'
 
 export const metadata: Metadata = {
   title: {
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     'Web application built with NextJS featuring a PostgreSQL API and styled with Tailwind CSS.',
   openGraph: {
     images: {
-      url: '/images/artorias-logo.svg'
+      url: '/logo.png'
     }
   }
 }
