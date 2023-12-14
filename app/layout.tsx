@@ -14,12 +14,7 @@ export const metadata: Metadata = {
     default: 'Dark Souls Weapons'
   },
   description:
-    'Web application built with NextJS featuring a PostgreSQL API and styled with Tailwind CSS.',
-  openGraph: {
-    images: {
-      url: '/logo.png'
-    }
-  }
+    'Web application built with NextJS featuring a PostgreSQL API and styled with Tailwind CSS.'
 }
 
 export default async function RootLayout({
