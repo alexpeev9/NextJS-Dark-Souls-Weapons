@@ -17,7 +17,9 @@ export const metadata: Metadata = {
     'Web application built with NextJS featuring a PostgreSQL API and styled with Tailwind CSS.',
   openGraph: {
     images: {
-      url: '/images/artorias-logo.svg'
+      url: '/images/artorias-logo.svg',
+      width: '1112',
+      height: '854'
     }
   }
 }
